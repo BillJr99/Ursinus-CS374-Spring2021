@@ -7,6 +7,7 @@ boilerplate:
     description: "We will be using Canvas to post all of the grades.  For the most part, we will submit work using professional standard tools for software collaboration (called git) that we will discuss as a class.  I will let you know this in assignment directions, so you'll always know how to submit work.  For all other discussions and announcements for the course, we will be using OneNote through <a href=\"https://insights.ursinus.edu/display/LEI/Microsoft+Teams\">Microsoft Teams</a>, which is linked to your Office suite through Ursinus, so you are automatically enrolled. There you can ask and answer questions about the lecture content and assignments.  Additionally, I have created a GroupMe chat which is tied to my mobile device for real-time questions and discussions."
     lmsname: "Canvas"
     lmslink: "https://ursinus.instructure.com/"
+    zoomrecordings: "Panopto on Canvas"
   disability: "Ursinus College is committed to ensuring equal access and providing reasonable accommodations for students with disabilities. The Institute for Student Success works with students who have any kind of disability, whether apparent or non-apparent, learning, emotional, physical, or cognitive, and need accommodations to increase their access to this learning environment. I encourage you to reach out to the Director of Disability Services, Dr. Dolly Singley to discuss about supports and accommodations you may need. Dolly’s office is located in the Institute for Student Success in Lower Wismer. You can schedule a meeting with Dolly by using this link: <a href=\"https://dsingley.youcanbook.me/\">https://dsingley.youcanbook.me/</a>, by emailing her at <a href=\"mailto:dsingley@ursinus.edu\">dsingley@ursinus.edu</a> or by calling her at 1-484-762-4329. Students can also review accessibility and disabilities services online at <a href=\"https://www.ursinus.edu/offices/institute-for-student-success/students-with-disabilities/\">https://www.ursinus.edu/offices/institute-for-student-success/students-with-disabilities/</a>."
   links:
     credithours: https://www.ursinus.edu/offices/academic-affairs/accreditation/campus-resources/credit-hours/
@@ -228,6 +229,11 @@ boilerplate:
     <br>
     {% endif %}
     
+    {% if page.info.jamboard %}
+    <li><strong>Jamboard Link for Class Questions:</strong> <a href="{{page.info.jamboard}}">Join our Jamboard here!</a></li>
+    <br>
+    {% endif %}    
+    
     {% if page.info.ical %}
     <li><strong>Course Calendar:</strong> <a href="{{ page.info.ical }}">Import the course calendar into your favorite calendar app with this link!</a></li><br>
     {% endif %}
@@ -273,7 +279,7 @@ boilerplate:
     
     
     {% if page.info.zoom %}
-    <li><strong>Zoom Link for Class Sessions (see <a href="{{ layout.boilerplate.lms.lmslink }}">{{ layout.boilerplate.lms.lmsname }}</a> for password and session recordings):</strong></li> 
+    <li><strong>Zoom Link for Class Sessions (see <a href="{{ layout.boilerplate.lms.lmslink }}">{{ layout.boilerplate.lms.lmsname }}</a> for password, and class recordings can be found on {{ layout.boilerplate.lms.zoomrecordings }}):</strong></li> 
     <ul>    
     {% for i in (0..page.info.zoom.size) %}
     {% if i < page.info.zoom.size %}
@@ -599,7 +605,11 @@ boilerplate:
     </td>
 
     <td align="left">
+    {% if item.reschedule %}
+    <strong>{{item.reschedule}}</strong>
+    {% else %}
     <strong><script language="JavaScript">document.write(getCourseDate("{{page.info.course_start_date}}", "{{item.week}}", "{{item.date}}", {{page.info.class_meets_days.isM}}, {{page.info.class_meets_days.isT}}, {{page.info.class_meets_days.isW}}, {{page.info.class_meets_days.isR}}, {{page.info.class_meets_days.isF}}, {{page.info.class_meets_days.isS}}, {{page.info.class_meets_days.isU}}));</script></strong>
+    {% endif %}
     </td>
 
     <td align="left">
@@ -840,7 +850,7 @@ boilerplate:
     <br /><br />
     See the <a href="{{layout.boilerplate.links.handbook}}">Course Management</a> page in the Faculty Handbook for an explanation of college policies on plagiarism and other academic honesty violations.
     <br /><br />
-    To encourage collaboration, students will be allowed to choose one or more "<strong>buddies</strong>" to work "near" during the assignment. Students are still expected to submit their own solutions, but they are allowed to provide substantial help to each other, and even to look at each others' code during the process. Students should indicate their buddies in the README upon assignment submission. Please let me know if you would like a buddy but are having trouble finding one.
+    To encourage collaboration, students will be allowed to choose one or more "<strong>buddies</strong>" to work "near" during the assignment. Students are still expected to submit their own solutions, but they are allowed to provide substantial help to each other, and even to look at each others' code during the process. Students must indicate their buddies in the README upon assignment submission. Please let me know if you would like a buddy but are having trouble finding one.
     <br /><br />
     Below is a table spelling out in more detail when and how you are allowed to share code with people (table style cribbed from <a href="https://www.cs.princeton.edu/courses/archive/spring19/cos126/syllabus.html">Princeton CS 126</a>).
     <br /><br />
@@ -879,7 +889,7 @@ boilerplate:
             <td>ALL EXCEPT<br>Assignments</td>
             <td>OK</td>
             <td>OK</td>
-            <td>In-Class<br>Exercises</td>
+            <td>NO</td>
             <td>NO</td>
           </tr>
           <tr>
@@ -887,7 +897,7 @@ boilerplate:
             <td>ALL EXCEPT<br>Assignments</td>
             <td>OK</td>
             <td>NO</td>
-            <td>In-Class<br>Exercises</td>
+            <td>NO</td>
             <td>NO</td>
           </tr>
           <tr>
@@ -901,7 +911,9 @@ boilerplate:
         </tbody>
         </table>
     <br />
-    If the work you submit appears to be copied from previous work or the collaboration policy has been violated in any way according to the College <a href="{{layout.boilerplate.links.academichonesty}}">Academic Honesty</a> policy, regardless of intent, then it may be an academic dishonesty case, and it will be referred to the Associate Dean for Academic Affairs.  I am required to make this report in every occurrence, so it is best to speak with me first if there are any questions about the policy or expectations.  You should feel free to have these conversations with me anytime prior to making your submission without fear of penalty.
+    If the work you submit appears to be copied from previous work or the collaboration policy has been violated in any way (including working with more collaborators or "buddies" than the course deliverable specifies) according to the College <a href="{{layout.boilerplate.links.academichonesty}}">Academic Honesty</a> policy, regardless of intent, then it may be an academic dishonesty case, and it will be referred to the Associate Dean for Academic Affairs.  I am required to make this report in every occurrence, so it is best to speak with me first if there are any questions about the policy or expectations.  You should feel free to have these conversations with me anytime prior to making your submission without fear of penalty.
+    
+    Finally, aside from the collaboration policy here, it is expected that your work is your original work.  You must cite any collaborations or references that you use.  You may have a friend or relative with computing experience, but they should not do your assignments, labs, etc., for you.
     
     
     
