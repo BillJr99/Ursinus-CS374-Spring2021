@@ -147,8 +147,14 @@ mdcontents = f.read()
 post = frontmatter.loads(mdcontents)
 postdict = post.to_dict()
 
+if not os.path.exists("files"):
+    try:
+        os.makedirs("files")
+    except:
+        pass
+        
 outfname = 'files/' + postdict['info']['course_number'] + '.ics'
-outf = open(outfname, 'w')
+outf = open(outfname, 'w+')
 
 coursenum = postdict['info']['course_number']
 coursename = postdict['info']['course_title']
