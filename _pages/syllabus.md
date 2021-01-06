@@ -5,7 +5,7 @@ title: "CS173: Intro to Computer Science"
 excerpt: "CS173: Intro to Computer Science"
     
 info:
-  course_number: CS173
+  course_number: CS374
   course_sections: 
   - section: "B"
   - section: "C"
