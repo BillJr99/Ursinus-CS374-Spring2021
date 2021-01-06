@@ -137,18 +137,18 @@ def geticalday(d):
         return ""
     
 if len(sys.argv) <= 1:
-    print("Specify md file")
-    sys.exit(0)
-
-fname = sys.argv[1]
+    fname = "_pages/syllabus.md"
+else:
+    fname = sys.argv[1]
+    
 f = open(fname, 'r')
 mdcontents = f.read()
 
-outfname = 'out.ics'
-outf = open(outfname, 'w')
-
 post = frontmatter.loads(mdcontents)
 postdict = post.to_dict()
+
+outfname = 'files/' + postdict['info']['course_number'] + '.ics'
+outf = open(outfname, 'w')
 
 coursenum = postdict['info']['course_number']
 coursename = postdict['info']['course_title']
@@ -168,7 +168,7 @@ outf.write("BEGIN:VCALENDAR\r\nVERSION:2.0\r\n")
 # DST Timezone Information for Recurring Times under current time zone rules
 outf.write("BEGIN:VTIMEZONE\r\nTZID:US-Eastern\r\nLAST-MODIFIED:20070101T000000Z\r\nTZURL:http://zones.stds_r_us.net/tz/US-Eastern\r\nBEGIN:STANDARD\r\nDTSTART:19671029T020000\r\nRRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11\r\nTZOFFSETFROM:-0400\r\nTZOFFSETTO:-0500\r\nTZNAME:EST\r\nEND:STANDARD\r\nBEGIN:DAYLIGHT\r\nDTSTART:19870405T020000\r\nRRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3\r\nTZOFFSETFROM:-0500\r\nTZOFFSETTO:-0400\r\nTZNAME:EDT\r\nEND:DAYLIGHT\r\nEND:VTIMEZONE\r\n")
 
-# Write the lecture schedule as a recurring event
+# Write the lecture schedule as a recurring event - recurring events do not account for rescheduled or designated dates, which will be updated on the syllabus
 for i in range(len(postdict['info']['class_meets_locations'])):
     section = postdict['info']['course_sections'][i]['section']
     for meeting in postdict['info']['class_meets_locations'][i]['section']:
