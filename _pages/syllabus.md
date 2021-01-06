@@ -1,8 +1,8 @@
 ---
 layout: syllabus
 permalink: /
-title: "CS173: Intro to Computer Science"
-excerpt: "CS173: Intro to Computer Science"
+title: "CS374: Principles of Programming Languages"
+excerpt: "CS374: Principles of Programming Languages"
     
 info:
   course_number: CS374
