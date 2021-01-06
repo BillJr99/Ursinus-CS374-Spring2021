@@ -3,6 +3,7 @@ import sys
 from datetime import datetime,timedelta
 import uuid
 from dateutil import tz
+import os
 
 # https://stackoverflow.com/questions/3663450/remove-substring-only-at-the-end-of-string
 def rchop(s, suffix):
