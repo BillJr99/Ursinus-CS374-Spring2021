@@ -482,6 +482,14 @@ def process_markdown(fname, canvas, course, courseid, homepage):
     add_discussion_topic(course, inputdict)
     
     inputdict = {}
+    inputdict['title'] = "Class Activity Questions"
+    inputdict['message'] = "This space will be used to answer class activity questions."
+    inputdict['discussion_type'] = "threaded"
+    inputdict['pinned'] = True
+    inputdict['published'] = True
+    add_discussion_topic(course, inputdict)    
+    
+    inputdict = {}
     inputdict['title'] = "Water Cooler"
     inputdict['message'] = "This is an open space - feel free to socialize here, post items that are on-topic or off-topic.  I do ask that you adhere to the classroom etiquitte and standards."
     inputdict['discussion_type'] = "threaded"
@@ -545,9 +553,11 @@ def process_markdown(fname, canvas, course, courseid, homepage):
             link = ""
    
         startd = getCourseDate(startdate, weekidx, dayidx, isM, isT, isW, isR, isF, isS, isU)
-        
         coursedt = getCourseDate(startdate, weekidx, dayidx, isM, isT, isW, isR, isF, isS, isU, tostring=False)
         coursedtstr = coursedt.strftime('%a, %b %d, %Y')
+        if 'reschedule' in item:
+            coursedtstr = item['reschedule']
+        
         weekdayidx = "(Week " + str(int(weekidx)+1) + " Day " + str(int(dayidx)+1) + ")"
         
         # Create a module for this entry
@@ -622,10 +632,15 @@ def process_markdown(fname, canvas, course, courseid, homepage):
                     inputdict['allowed_extensions'].append('gz')
                     inputdict['allowed_extensions'].append('rar')
                     inputdict['allowed_extensions'].append('7z')
+                    if not ('Programming Assignment:' in description.lower()):
+                        inputdict['allowed_extensions'].append('pdf')
+                        inputdict['allowed_extensions'].append('doc')
+                        inputdict['allowed_extensions'].append('docx')
+                        inputdict['allowed_extensions'].append('txt')
                     inputdict['notify_of_update'] = True
                     inputdict['published'] = True
                     inputdict['points_possible'] = points
-                    inputdict['description'] = description + " (" + makelink(addslash(homepage), stripnobool(dlink)) + ")"
+                    inputdict['description'] = description + " (<a href=\"" + makelink(addslash(homepage), stripnobool(dlink)) + "\">" + makelink(addslash(homepage), stripnobool(dlink)) + "</a>)"
                     inputdict['due_at'] = parseDateTimeCanvas(datetime.strptime(duedate + DUE_TIME, "%Y%m%dT%H%M%SZ")) 
                     inputdict['position'] = asmtidx
                     
