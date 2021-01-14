@@ -116,14 +116,22 @@ textbooks:
   image: https://bookinfo.mbsdirect.net/TextbookInfo/Covers/0471104264.gif
   isrequired: true 
   freelyavailable: false
+- title: "Introduction to Compilers and Language Design"
+  author: "Douglas Thain"
+  edition: "2nd Edition"
+  isbn: "N/A"
+  link: https://www3.nd.edu/~dthain/compilerbook/
+  image: https://www3.nd.edu/~dthain/compilerbook/frontcover-2e.jpg
+  isrequired: true
+  freelyavailable: https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
 - title: "Structure and Interpretation of Computer Programs"
   authors: "Harold Abelson and Gerald Jay Sussman with Julie Sussman"
   edition: "2nd Edition"
-  isbn: "9780262510875"
+  isbn: "N/A"
   link: https://mitpress.mit.edu/sites/default/files/sicp/index.html
   image: https://mitpress.mit.edu/sites/default/files/styles/large_book_cover/http/mitp-content-server.mit.edu%3A18180/books/covers/cover/%3Fcollid%3Dbooks_covers_0%26isbn%3D9780262011532%26type%3D.jpg?itok=hj8_QiVs
   isrequired: false   
-  freelyavailable: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html
+  freelyavailable: https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html  
 
 objectives:
 - objective: "To design a programming language by specifying tokens and a grammar"
@@ -181,7 +189,7 @@ schedule:
   title: "Course Overview"
 - week: "0"
   date: "2"
-  title: "TBD"
+  title: "History of Programming Languages"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Handed Out"
     dlink: "./Assignments/Participation/PreAssessment"
@@ -191,13 +199,16 @@ schedule:
     points: 10    
 - week: "1"
   date: "0"
-  title: "TBD"  
+  title: "History of Programming Languages"  
+  readings:
+  - title: "PLC Ch. 1"
+    rlink: false
 - week: "1"
   date: "1"
-  title: "TBD"  
+  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"  
 - week: "1"
   date: "2"
-  title: "TBD"
+  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
@@ -207,128 +218,175 @@ schedule:
     points: 10    
 - week: "2"
   date: "0"
-  title: "TBD"  
+  title: "Syntax"
+  readings:
+  - title: "PLC Ch. 2"
+    rlink: false  
 - week: "2"
   date: "1"
-  title: "TBD"  
+  title: "Bindng and Scope"  
 - week: "2"
   date: "2"
-  title: "TBD"  
+  title: "Binding and Scope"  
 - week: "3"
   date: "0"
-  title: "TBD"  
+  title: "Binding and Scope"  
 - week: "3"
   date: "1"
-  title: "TBD"  
+  title: "Regular Expressions"
+  readings:
+  - title: "Compilers Ch. 3.3"
+    rlink: false    
 - week: "3"
   date: "2"
-  title: "TBD"  
+  title: "Regular Expressions"  
 - week: "4"
   date: "0"
-  title: "TBD"  
+  title: "Finite Automata"  
+  readings:
+  - title: "Compilers Ch. 3.4-3.6"
+    rlink: false     
 - week: "4"
   date: "1"
-  title: "TBD"  
+  title: "Finite Automata"  
 - week: "4"
   date: "2"
-  title: "TBD"  
+  title: "Finite Automata"  
 - week: "5"
   date: "0"
-  title: "TBD"  
+  title: "Data Types"  
+  readings:
+  - title: "PLC Ch. 3"
+    rlink: false      
+  - title: "Compilers Ch. 7"
+    rlink: false    
 - week: "5"
   date: "1"
-  title: "TBD"  
+  title: "Data Types"  
 - week: "5"
   date: "2"
-  title: "TBD"  
+  title: "Data Types"  
 - week: "6"
   date: "0"
-  title: "TBD"   
+  title: "Code Structure" 
+  readings:
+  - rtitle: "PLC Ch. 4"
+    rlink: false  
 - week: "6"
   date: "2"
-  title: "TBD"
+  title: "Code Structure: Expressions and Conditionals"
   deliverables:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10   
 - week: "7"
   date: "0"
-  title: "TBD"  
+  title: "Code Structure: Functions and Exceptions"  
 - week: "7"
   date: "1"
-  title: "TBD"  
+  title: "Data Structures and Generics"  
+  readings:
+  - rtitle: "PLC Ch. 5"
+    rlink: false  
 - week: "7"
   date: "2"
-  title: "TBD" 
+  title: "Libraries" 
   deliverables:
     - dtitle: "Participation: First Self-Assessment Due"
       dlink: "./Assignments/Participation/SelfAssessment"
       points: 10    
 - week: "8"
   date: "0"
-  title: "TBD"  
+  title: "The Compilation Process"  
+  readings:
+  - rtitle: "Compilers Ch. 2"
+    rlink: false    
 - week: "8"
   date: "1"
-  title: "TBD"  
+  title: "Bytecode"  
+  readings:
+  - rtitle: "Compilers Ch. 8"
+    rlink: false    
 - week: "8"
   date: "2"
-  title: "TBD"  
+  title: "Memory Management"  
+  readings:
+  - rtitle: "Compilers Ch. 9"
+    rlink: false    
 - week: "9"
   date: "0"
-  title: "TBD"  
+  title: "Grammars"  
+  readings:
+  - rtitle: "Compilers Ch. 3"
+    rlink: false    
 - week: "9"
   date: "1"
-  title: "TBD"  
+  title: "Ambiguity in Grammars"  
 - week: "9"
   date: "2"
-  title: "TBD"  
+  title: "Tokens and Scanning"  
 - week: "10"
   date: "0"
-  title: "TBD"   
+  title: "Tokens and Scanning"   
 - week: "10"
   date: "2"
-  title: "TBD"  
+  title: "Parsing and Interpreting"  
+  readings:
+  - rtitle: "Compilers Ch. 4-5"
+    rlink: false    
 - week: "11"
   date: "0"
-  title: "TBD"  
+  title: "Parsing and Interpreting"  
 - week: "11"
   date: "1"
-  title: "TBD"  
+  title: "Parsing and Interpreting"  
 - week: "11"
   date: "2"
-  title: "TBD"  
+  title: "Parsing and Interpreting"  
 - week: "12"
   date: "0"
-  title: "TBD"  
+  title: "Abstract Syntax Trees"  
+  readings:
+  - rtitle: "Compilers Ch. 6"
+    rlink: false    
 - week: "12"
   date: "1"
-  title: "TBD"
+  title: "Abstract Syntax Trees"
   deliverables:
   - dtitle: "Final Project: Project and Presentation Handed Out"
     dlink: "Projects/Final"  
     points: 100   
 - week: "12"
   date: "2"
-  title: "TBD"  
+  title: "Abstract Syntax Trees"  
 - week: "13"
   date: "0"
-  title: "TBD"  
+  title: "Object Oriented Languages"  
+  readings:
+  - rtitle: "PLC Ch. 6"
+    rlink: false    
 - week: "13"
   date: "1"
-  title: "TBD" 
+  title: "Functional Programming" 
+  readings:
+  - rtitle: "PLC Ch. 7"
+    rlink: false   
   deliverables:
     - dtitle: "Participation: Second Self-Assessment Handed Out"
       dlink: "./Assignments/Participation/SelfAssessment"
       points: 10     
 - week: "13"
   date: "2"
-  title: "TBD"  
+  title: "Functional Programming"  
 - week: "14"
   date: "0"
-  title: "TBD"  
+  title: "Functional Programming"  
 - week: "14"
   date: "1"
-  title: "TBD" 
+  title: "Logic Programming" 
+  readings:
+  - rtitle: "PLC Ch. 8"
+    rlink: false   
   deliverables:   
     - dtitle: "Participation: Second Self-Assessment Due"
       dlink: "./Assignments/Participation/SelfAssessment"
