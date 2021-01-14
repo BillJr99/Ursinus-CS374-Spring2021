@@ -108,7 +108,7 @@ instructors:
     location: "Virtual Office Hours on Microsoft Teams"     
     
 textbooks:
-- title: "Programming Language Concepts"
+- rtitle: "Programming Language Concepts"
   authors: "Carlo Ghezzi and Mehdi Jazayeri"
   edition: "3rd Edition"
   isbn: "978-0471104261"
@@ -116,7 +116,7 @@ textbooks:
   image: https://bookinfo.mbsdirect.net/TextbookInfo/Covers/0471104264.gif
   isrequired: true 
   freelyavailable: false
-- title: "Introduction to Compilers and Language Design"
+- rtitle: "Introduction to Compilers and Language Design"
   author: "Douglas Thain"
   edition: "2nd Edition"
   isbn: "N/A"
@@ -124,7 +124,7 @@ textbooks:
   image: https://www3.nd.edu/~dthain/compilerbook/frontcover-2e.jpg
   isrequired: true
   freelyavailable: https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
-- title: "Structure and Interpretation of Computer Programs"
+- rtitle: "Structure and Interpretation of Computer Programs"
   authors: "Harold Abelson and Gerald Jay Sussman with Julie Sussman"
   edition: "2nd Edition"
   isbn: "N/A"
@@ -201,7 +201,7 @@ schedule:
   date: "0"
   title: "History of Programming Languages"  
   readings:
-  - title: "PLC Ch. 1"
+  - rtitle: "PLC Ch. 1"
     rlink: false
 - week: "1"
   date: "1"
@@ -220,7 +220,7 @@ schedule:
   date: "0"
   title: "Syntax"
   readings:
-  - title: "PLC Ch. 2"
+  - rtitle: "PLC Ch. 2"
     rlink: false  
 - week: "2"
   date: "1"
@@ -235,7 +235,7 @@ schedule:
   date: "1"
   title: "Regular Expressions"
   readings:
-  - title: "Compilers Ch. 3.3"
+  - rtitle: "Compilers Ch. 3.3"
     rlink: false    
 - week: "3"
   date: "2"
@@ -244,7 +244,7 @@ schedule:
   date: "0"
   title: "Finite Automata"  
   readings:
-  - title: "Compilers Ch. 3.4-3.6"
+  - rtitle: "Compilers Ch. 3.4-3.6"
     rlink: false     
 - week: "4"
   date: "1"
@@ -256,9 +256,9 @@ schedule:
   date: "0"
   title: "Data Types"  
   readings:
-  - title: "PLC Ch. 3"
+  - rtitle: "PLC Ch. 3"
     rlink: false      
-  - title: "Compilers Ch. 7"
+  - rtitle: "Compilers Ch. 7"
     rlink: false    
 - week: "5"
   date: "1"
@@ -292,9 +292,9 @@ schedule:
   date: "2"
   title: "Libraries" 
   deliverables:
-    - dtitle: "Participation: First Self-Assessment Due"
-      dlink: "./Assignments/Participation/SelfAssessment"
-      points: 10    
+  - dtitle: "Participation: First Self-Assessment Due"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10    
 - week: "8"
   date: "0"
   title: "The Compilation Process"  
@@ -372,9 +372,9 @@ schedule:
   - rtitle: "PLC Ch. 7"
     rlink: false   
   deliverables:
-    - dtitle: "Participation: Second Self-Assessment Handed Out"
-      dlink: "./Assignments/Participation/SelfAssessment"
-      points: 10     
+  - dtitle: "Participation: Second Self-Assessment Handed Out"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10     
 - week: "13"
   date: "2"
   title: "Functional Programming"  
@@ -388,9 +388,9 @@ schedule:
   - rtitle: "PLC Ch. 8"
     rlink: false   
   deliverables:   
-    - dtitle: "Participation: Second Self-Assessment Due"
-      dlink: "./Assignments/Participation/SelfAssessment"
-      points: 10    
+  - dtitle: "Participation: Second Self-Assessment Due"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10    
 - week: "15"
   date: "0"
   title: "Review" 
