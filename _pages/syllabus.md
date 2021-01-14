@@ -106,6 +106,7 @@ instructors:
     starttime: "1:30 PM"
     endtime: "3:30 PM"
     location: "Virtual Office Hours on Microsoft Teams"     
+    
 textbooks:
 - title: "Programming Language Concepts"
   authors: "Carlo Ghezzi and Mehdi Jazayeri"
@@ -136,9 +137,9 @@ goals:
 
 grade_breakdown:
 - category: "Programming Assignments"
-  weight: "40%"
-- category: "Labs"
   weight: "25%"
+- category: "Labs"
+  weight: "40%"
 - category: "Midterm Exam"
   weight: "15%"
 - category: "Final Project"
@@ -181,6 +182,13 @@ schedule:
 - week: "0"
   date: "2"
   title: "TBD"
+  deliverables:
+  - dtitle: "Participation: Pre-Assessment Handed Out"
+    dlink: "./Assignments/Participation/PreAssessment"
+    points: 10   
+  - dtitle: "Programming Assignment: Warmup Handed Out"
+    dlink: "./Assignments/Warmup"
+    points: 10    
 - week: "1"
   date: "0"
   title: "TBD"  
@@ -189,7 +197,14 @@ schedule:
   title: "TBD"  
 - week: "1"
   date: "2"
-  title: "TBD"  
+  title: "TBD"
+  deliverables:
+  - dtitle: "Participation: Pre-Assessment Due"
+    dlink: "./Assignments/Participation/PreAssessment"
+    points: 10 
+  - dtitle: "Programming Assignment: Warmup Due"
+    dlink: "./Assignments/Warmup"
+    points: 10    
 - week: "2"
   date: "0"
   title: "TBD"  
@@ -231,7 +246,11 @@ schedule:
   title: "TBD"   
 - week: "6"
   date: "2"
-  title: "TBD"  
+  title: "TBD"
+  deliverables:
+  - dtitle: "Participation: First Self-Assessment Handed Out"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10   
 - week: "7"
   date: "0"
   title: "TBD"  
@@ -240,7 +259,11 @@ schedule:
   title: "TBD"  
 - week: "7"
   date: "2"
-  title: "TBD"  
+  title: "TBD" 
+  deliverables:
+    - dtitle: "Participation: First Self-Assessment Due"
+      dlink: "./Assignments/Participation/SelfAssessment"
+      points: 10    
 - week: "8"
   date: "0"
   title: "TBD"  
@@ -279,7 +302,11 @@ schedule:
   title: "TBD"  
 - week: "12"
   date: "1"
-  title: "TBD"  
+  title: "TBD"
+  deliverables:
+  - dtitle: "Final Project: Project and Presentation Handed Out"
+    dlink: "Projects/Final"  
+    points: 100   
 - week: "12"
   date: "2"
   title: "TBD"  
@@ -288,7 +315,11 @@ schedule:
   title: "TBD"  
 - week: "13"
   date: "1"
-  title: "TBD"  
+  title: "TBD" 
+  deliverables:
+    - dtitle: "Participation: Second Self-Assessment Handed Out"
+      dlink: "./Assignments/Participation/SelfAssessment"
+      points: 10     
 - week: "13"
   date: "2"
   title: "TBD"  
@@ -297,10 +328,18 @@ schedule:
   title: "TBD"  
 - week: "14"
   date: "1"
-  title: "TBD"  
+  title: "TBD" 
+  deliverables:   
+    - dtitle: "Participation: Second Self-Assessment Due"
+      dlink: "./Assignments/Participation/SelfAssessment"
+      points: 10    
 - week: "15"
   date: "0"
-  title: "Final Project Presentations" 
+  title: "Review" 
+  deliverables:
+  - dtitle: "Final Project: Project and Presentation Due"
+    dlink: "Projects/Final"
+    points: 100  
   
 university:
   semester: "Spring"
