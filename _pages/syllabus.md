@@ -108,7 +108,7 @@ instructors:
     location: "Virtual Office Hours on Microsoft Teams"     
     
 textbooks:
-- rtitle: "Programming Language Concepts"
+- title: "Programming Language Concepts"
   authors: "Carlo Ghezzi and Mehdi Jazayeri"
   edition: "3rd Edition"
   isbn: "978-0471104261"
@@ -116,15 +116,15 @@ textbooks:
   image: https://bookinfo.mbsdirect.net/TextbookInfo/Covers/0471104264.gif
   isrequired: true 
   freelyavailable: false
-- rtitle: "Introduction to Compilers and Language Design"
-  author: "Douglas Thain"
+- title: "Introduction to Compilers and Language Design"
+  authors: "Douglas Thain"
   edition: "2nd Edition"
   isbn: "N/A"
   link: https://www3.nd.edu/~dthain/compilerbook/
   image: https://www3.nd.edu/~dthain/compilerbook/frontcover-2e.jpg
   isrequired: true
   freelyavailable: https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf
-- rtitle: "Structure and Interpretation of Computer Programs"
+- title: "Structure and Interpretation of Computer Programs"
   authors: "Harold Abelson and Gerald Jay Sussman with Julie Sussman"
   edition: "2nd Edition"
   isbn: "N/A"
