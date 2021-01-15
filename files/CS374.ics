@@ -95,7 +95,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f1804
 DTSTAMP:20210122T000000Z
 DTSTART;VALUE=DATE:20210122
-SUMMARY:CS374 Principles of Programming Languages: Participation: Pre-Assessment Handed Out
+SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Warmup Handed Out
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -104,18 +104,18 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f1805
 DTSTAMP:20210122T000000Z
 DTSTART;VALUE=DATE:20210122
-SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Warmup Handed Out
+SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:
+DESCRIPTION:\nDeliverable: Programming Assignment: Warmup Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f1806
-DTSTAMP:20210122T000000Z
-DTSTART;VALUE=DATE:20210122
-SUMMARY:CS374 Principles of Programming Languages: Class Meeting
+DTSTAMP:20210125T000000Z
+DTSTART;VALUE=DATE:20210125
+SUMMARY:CS374 Principles of Programming Languages: Participation: Pre-Assessment Handed Out
 LOCATION:
-DESCRIPTION:\nDeliverable: Participation: Pre-Assessment Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/PreAssessment\nDeliverable: Programming Assignment: Warmup Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -124,7 +124,7 @@ DTSTAMP:20210125T000000Z
 DTSTART;VALUE=DATE:20210125
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: PLC Ch. 1
+DESCRIPTION:\nReading: PLC Ch. 1\nDeliverable: Participation: Pre-Assessment Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/PreAssessment
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -140,7 +140,7 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f1809
 DTSTAMP:20210129T000000Z
 DTSTART;VALUE=DATE:20210129
-SUMMARY:CS374 Principles of Programming Languages: Participation: Pre-Assessment Due
+SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Warmup Due
 LOCATION:
 DESCRIPTION:
 PRIORITY:3
@@ -149,18 +149,18 @@ BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f180a
 DTSTAMP:20210129T000000Z
 DTSTART;VALUE=DATE:20210129
-SUMMARY:CS374 Principles of Programming Languages: Programming Assignment: Warmup Due
+SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:
+DESCRIPTION:\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
 UID:00000000-0000-0000-0000-0366c95f180b
-DTSTAMP:20210129T000000Z
-DTSTART;VALUE=DATE:20210129
-SUMMARY:CS374 Principles of Programming Languages: Class Meeting
+DTSTAMP:20210201T000000Z
+DTSTART;VALUE=DATE:20210201
+SUMMARY:CS374 Principles of Programming Languages: Participation: Pre-Assessment Due
 LOCATION:
-DESCRIPTION:\nDeliverable: Participation: Pre-Assessment Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/PreAssessment\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
+DESCRIPTION:
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -169,7 +169,7 @@ DTSTAMP:20210201T000000Z
 DTSTART;VALUE=DATE:20210201
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: PLC Ch. 2
+DESCRIPTION:\nReading: PLC Ch. 2\nDeliverable: Participation: Pre-Assessment Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Participation/PreAssessment
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
