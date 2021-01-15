@@ -190,10 +190,7 @@ schedule:
 - week: "0"
   date: "2"
   title: "History of Programming Languages"
-  deliverables:
-  - dtitle: "Participation: Pre-Assessment Handed Out"
-    dlink: "./Assignments/Participation/PreAssessment"
-    points: 10   
+  deliverables:  
   - dtitle: "Programming Assignment: Warmup Handed Out"
     dlink: "./Assignments/Warmup"
     points: 10    
@@ -203,6 +200,10 @@ schedule:
   readings:
   - rtitle: "PLC Ch. 1"
     rlink: false
+  deliverables:
+  - dtitle: "Participation: Pre-Assessment Handed Out"
+    dlink: "./Assignments/Participation/PreAssessment"
+    points: 10   
 - week: "1"
   date: "1"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"  
@@ -210,9 +211,6 @@ schedule:
   date: "2"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"
   deliverables:
-  - dtitle: "Participation: Pre-Assessment Due"
-    dlink: "./Assignments/Participation/PreAssessment"
-    points: 10 
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
     points: 10    
@@ -222,6 +220,10 @@ schedule:
   readings:
   - rtitle: "PLC Ch. 2"
     rlink: false  
+  deliverables:
+  - dtitle: "Participation: Pre-Assessment Due"
+    dlink: "./Assignments/Participation/PreAssessment"
+    points: 10   
 - week: "2"
   date: "1"
   title: "Bindng and Scope"  
