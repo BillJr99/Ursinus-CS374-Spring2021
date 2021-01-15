@@ -187,6 +187,7 @@ schedule:
 - week: "0"
   date: "1"
   title: "Course Overview"
+  link: "./Ursinus-CS374-Overview"
 - week: "0"
   date: "2"
   title: "History of Programming Languages"
