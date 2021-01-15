@@ -188,43 +188,43 @@ schedule:
   date: "1"
   title: "Course Overview"
   link: "../Ursinus-CS374-Overview"
-- week: "0"
-  date: "2"
-  title: "History of Programming Languages"
   deliverables:  
   - dtitle: "Programming Assignment: Warmup Handed Out"
     dlink: "./Assignments/Warmup"
-    points: 10    
-- week: "1"
-  date: "0"
-  title: "History of Programming Languages"  
-  readings:
-  - rtitle: "PLC Ch. 1"
-    rlink: false
+    points: 10      
+- week: "0"
+  date: "2"
+  title: "History of Programming Languages"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Handed Out"
     dlink: "./Assignments/Participation/PreAssessment"
     points: 10   
 - week: "1"
+  date: "0"
+  title: "History of Programming Languages"  
+  readings:
+  - rtitle: "PLC Ch. 1"
+    rlink: false  
+- week: "1"
   date: "1"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"  
+  deliverables:
+  - dtitle: "Programming Assignment: Warmup Due"
+    dlink: "./Assignments/Warmup"
+    points: 10     
 - week: "1"
   date: "2"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"
   deliverables:
-  - dtitle: "Programming Assignment: Warmup Due"
-    dlink: "./Assignments/Warmup"
-    points: 10    
+  - dtitle: "Participation: Pre-Assessment Due"
+    dlink: "./Assignments/Participation/PreAssessment"
+    points: 10   
 - week: "2"
   date: "0"
   title: "Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
-    rlink: false  
-  deliverables:
-  - dtitle: "Participation: Pre-Assessment Due"
-    dlink: "./Assignments/Participation/PreAssessment"
-    points: 10   
+    rlink: false   
 - week: "2"
   date: "1"
   title: "Bindng and Scope"  
