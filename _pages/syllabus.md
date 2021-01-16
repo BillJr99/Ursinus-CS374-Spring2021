@@ -245,7 +245,7 @@ schedule:
   date: "1"
   title: "Scripting Languages" 
   readings:
-  - rtile: "Bash Scripting Tutorial"
+  - rtitle: "Bash Scripting Tutorial"
     rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"
 - week: "3"
   date: "2"
