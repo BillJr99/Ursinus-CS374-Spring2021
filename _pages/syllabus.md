@@ -195,6 +195,7 @@ schedule:
 - week: "0"
   date: "2"
   title: "History of Programming Languages"
+  link: "../Ursinus-CS374-History"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Handed Out"
     dlink: "./Assignments/Participation/PreAssessment"
@@ -202,7 +203,6 @@ schedule:
 - week: "1"
   date: "0"
   title: "History of Programming Languages"  
-  link: "../Ursinus-CS374-History"
   readings:
   - rtitle: "PLC Ch. 1"
     rlink: false  
