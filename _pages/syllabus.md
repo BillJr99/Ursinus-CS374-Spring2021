@@ -209,6 +209,7 @@ schedule:
 - week: "1"
   date: "1"
   title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"  
+  link: "./Activities/Paradigms"
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
@@ -250,12 +251,14 @@ schedule:
 - week: "3"
   date: "2"
   title: "Syntax"
+  link: "./Activities/Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
     rlink: false   
 - week: "4"
   date: "0"
-  title: "Bindng and Scope"  
+  title: "Bindng and Scope" 
+  link: "./Activities/BindingScope"  
 - week: "4"
   date: "1"
   title: "Binding and Scope"  
@@ -265,6 +268,7 @@ schedule:
 - week: "5"
   date: "0"
   title: "Regular Expressions"
+  link: "./Activities/Regex"
   readings:
   - rtitle: "Compilers Ch. 3.3"
     rlink: false    
@@ -273,7 +277,8 @@ schedule:
   title: "Regular Expressions"  
 - week: "5"
   date: "2"
-  title: "Finite Automata"  
+  title: "Finite Automata" 
+  link: "./Activities/Automata"
   readings:
   - rtitle: "Compilers Ch. 3.4-3.6"
     rlink: false     
@@ -290,6 +295,7 @@ schedule:
 - week: "7"
   date: "0"
   title: "Data Types"  
+  link: "./Activities/Types"
   deliverables:
   - dtitle: "Participation: First Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
@@ -308,6 +314,7 @@ schedule:
 - week: "8"
   date: "0"
   title: "Code Structure" 
+  link: "./Activities/CodeStructure"
   readings:
   - rtitle: "PLC Ch. 4"
     rlink: false  
@@ -320,33 +327,36 @@ schedule:
 - week: "9"
   date: "0"
   title: "Data Structures and Generics"  
+  link: "./Activities/DataStructures"
   readings:
   - rtitle: "PLC Ch. 5"
     rlink: false  
 - week: "9"
   date: "1"
-  title: "Libraries"    
-- week: "9"
-  date: "2"
-  title: "The Compilation Process"  
-  readings:
-  - rtitle: "Compilers Ch. 2"
-    rlink: false    
-- week: "10"
-  date: "0"
-  title: "Bytecode"  
-  readings:
-  - rtitle: "Compilers Ch. 8"
-    rlink: false    
-- week: "10"
-  date: "2"
   title: "Memory Management"  
   readings:
   - rtitle: "Compilers Ch. 9"
-    rlink: false    
+    rlink: false     
+- week: "9"
+  date: "2"
+  title: "The Compilation and Linking Process"  
+  link: "./Activities/CompilerLinker"
+  readings:
+  - rtitle: "Compilers Ch. 2"
+    rlink: false 
+- week: "10"
+  date: "0"
+  title: "Libraries"     
+- week: "10"
+  date: "1"
+  title: "Bytecode"  
+  readings:
+  - rtitle: "Compilers Ch. 8"
+    rlink: false       
 - week: "11"
   date: "0"
-  title: "Grammars"  
+  title: "Grammars" 
+  link: "./Activities/Grammars"  
   readings:
   - rtitle: "Compilers Ch. 3"
     rlink: false    
@@ -355,13 +365,15 @@ schedule:
   title: "Ambiguity in Grammars"  
 - week: "11"
   date: "2"
-  title: "Tokens and Scanning"  
+  title: "Tokens and Scanning"
+  link: "./Activities/TokensScanning"
 - week: "12"
   date: "0"
   title: "Tokens and Scanning"   
 - week: "12"
   date: "1"
-  title: "Parsing and Interpreting"  
+  title: "Parsing and Interpreting" 
+  link: "./Activities/ParserInterpreter"  
   readings:
   - rtitle: "Compilers Ch. 4-5"
     rlink: false    
@@ -385,6 +397,7 @@ schedule:
 - week: "13"
   date: "2"
   title: "Abstract Syntax Trees"  
+  link: "./Activities/AST"
   readings:
   - rtitle: "Compilers Ch. 6"
     rlink: false    
