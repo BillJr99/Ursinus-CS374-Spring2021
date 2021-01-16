@@ -202,6 +202,7 @@ schedule:
 - week: "1"
   date: "0"
   title: "History of Programming Languages"  
+  link: "../Ursinus-CS374-History"
   readings:
   - rtitle: "PLC Ch. 1"
     rlink: false  
@@ -367,6 +368,10 @@ schedule:
 - week: "12"
   date: "2"
   title: "Parsing and Interpreting"  
+  deliverables:
+  - dtitle: "Final Project: Project and Presentation Handed Out"
+    dlink: "Projects/Final"  
+    points: 100 
 - week: "13"
   date: "0"
   title: "Parsing and Interpreting"  
@@ -385,11 +390,7 @@ schedule:
     rlink: false    
 - week: "14"
   date: "0"
-  title: "Abstract Syntax Trees"
-  deliverables:
-  - dtitle: "Final Project: Project and Presentation Handed Out"
-    dlink: "Projects/Final"  
-    points: 100   
+  title: "Abstract Syntax Trees"  
 - week: "14"
   date: "1"
   title: "Abstract Syntax Trees"  
