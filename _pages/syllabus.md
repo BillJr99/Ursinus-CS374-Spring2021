@@ -221,175 +221,178 @@ schedule:
     points: 10   
 - week: "2"
   date: "0"
+  title: "Object Oriented Languages"  
+  readings:
+  - rtitle: "PLC Ch. 6"
+    rlink: false    
+- week: "2"
+  date: "1"
+  title: "Functional Programming" 
+  readings:
+  - rtitle: "PLC Ch. 7"
+    rlink: false     
+- week: "2"
+  date: "2"
+  title: "Functional Programming"  
+- week: "3"
+  date: "0"
+  title: "Logic Programming"  
+  readings:
+  - rtitle: "PLC Ch. 8"
+    rlink: false 
+- week: "3"
+  date: "1"
+  title: "Scripting Languages" 
+  readings:
+  - rtile: "Bash Scripting Tutorial"
+    rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"
+- week: "3"
+  date: "2"
   title: "Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
     rlink: false   
-- week: "2"
-  date: "1"
+- week: "4"
+  date: "0"
   title: "Bindng and Scope"  
-- week: "2"
+- week: "4"
+  date: "1"
+  title: "Binding and Scope"  
+- week: "4"
   date: "2"
   title: "Binding and Scope"  
-- week: "3"
+- week: "5"
   date: "0"
-  title: "Binding and Scope"  
-- week: "3"
-  date: "1"
   title: "Regular Expressions"
   readings:
   - rtitle: "Compilers Ch. 3.3"
     rlink: false    
-- week: "3"
-  date: "2"
+- week: "5"
+  date: "1"
   title: "Regular Expressions"  
-- week: "4"
-  date: "0"
+- week: "5"
+  date: "2"
   title: "Finite Automata"  
   readings:
   - rtitle: "Compilers Ch. 3.4-3.6"
     rlink: false     
-- week: "4"
-  date: "1"
+- week: "6"
+  date: "0"
   title: "Finite Automata"  
-- week: "4"
+  deliverables:
+  - dtitle: "Participation: First Self-Assessment Handed Out"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10 
+- week: "6"
   date: "2"
   title: "Finite Automata"  
-- week: "5"
+- week: "7"
   date: "0"
   title: "Data Types"  
+  deliverables:
+  - dtitle: "Participation: First Self-Assessment Due"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10     
   readings:
   - rtitle: "PLC Ch. 3"
     rlink: false      
   - rtitle: "Compilers Ch. 7"
     rlink: false    
-- week: "5"
+- week: "7"
   date: "1"
   title: "Data Types"  
-- week: "5"
+- week: "7"
   date: "2"
   title: "Data Types"  
-- week: "6"
+- week: "8"
   date: "0"
   title: "Code Structure" 
   readings:
   - rtitle: "PLC Ch. 4"
     rlink: false  
-- week: "6"
-  date: "2"
-  title: "Code Structure: Expressions and Conditionals"
-  deliverables:
-  - dtitle: "Participation: First Self-Assessment Handed Out"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10   
-- week: "7"
-  date: "0"
-  title: "Code Structure: Functions and Exceptions"  
-- week: "7"
+- week: "8"
   date: "1"
+  title: "Code Structure: Expressions and Conditionals" 
+- week: "8"
+  date: "2"
+  title: "Code Structure: Functions and Exceptions"  
+- week: "9"
+  date: "0"
   title: "Data Structures and Generics"  
   readings:
   - rtitle: "PLC Ch. 5"
     rlink: false  
-- week: "7"
+- week: "9"
+  date: "1"
+  title: "Libraries"    
+- week: "9"
   date: "2"
-  title: "Libraries" 
-  deliverables:
-  - dtitle: "Participation: First Self-Assessment Due"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10    
-- week: "8"
-  date: "0"
   title: "The Compilation Process"  
   readings:
   - rtitle: "Compilers Ch. 2"
     rlink: false    
-- week: "8"
-  date: "1"
+- week: "10"
+  date: "0"
   title: "Bytecode"  
   readings:
   - rtitle: "Compilers Ch. 8"
     rlink: false    
-- week: "8"
+- week: "10"
   date: "2"
   title: "Memory Management"  
   readings:
   - rtitle: "Compilers Ch. 9"
     rlink: false    
-- week: "9"
+- week: "11"
   date: "0"
   title: "Grammars"  
   readings:
   - rtitle: "Compilers Ch. 3"
     rlink: false    
-- week: "9"
+- week: "11"
   date: "1"
   title: "Ambiguity in Grammars"  
-- week: "9"
+- week: "11"
   date: "2"
   title: "Tokens and Scanning"  
-- week: "10"
+- week: "12"
   date: "0"
   title: "Tokens and Scanning"   
-- week: "10"
-  date: "2"
+- week: "12"
+  date: "1"
   title: "Parsing and Interpreting"  
   readings:
   - rtitle: "Compilers Ch. 4-5"
     rlink: false    
-- week: "11"
-  date: "0"
-  title: "Parsing and Interpreting"  
-- week: "11"
-  date: "1"
-  title: "Parsing and Interpreting"  
-- week: "11"
+- week: "12"
   date: "2"
   title: "Parsing and Interpreting"  
-- week: "12"
+- week: "13"
   date: "0"
+  title: "Parsing and Interpreting"  
+- week: "13"
+  date: "1"
+  title: "Parsing and Interpreting"  
+  deliverables:
+  - dtitle: "Participation: Second Self-Assessment Handed Out"
+    dlink: "./Assignments/Participation/SelfAssessment"
+    points: 10   
+- week: "13"
+  date: "2"
   title: "Abstract Syntax Trees"  
   readings:
   - rtitle: "Compilers Ch. 6"
     rlink: false    
-- week: "12"
-  date: "1"
+- week: "14"
+  date: "0"
   title: "Abstract Syntax Trees"
   deliverables:
   - dtitle: "Final Project: Project and Presentation Handed Out"
     dlink: "Projects/Final"  
     points: 100   
-- week: "12"
-  date: "2"
+- week: "14"
+  date: "1"
   title: "Abstract Syntax Trees"  
-- week: "13"
-  date: "0"
-  title: "Object Oriented Languages"  
-  readings:
-  - rtitle: "PLC Ch. 6"
-    rlink: false    
-- week: "13"
-  date: "1"
-  title: "Functional Programming" 
-  readings:
-  - rtitle: "PLC Ch. 7"
-    rlink: false   
-  deliverables:
-  - dtitle: "Participation: Second Self-Assessment Handed Out"
-    dlink: "./Assignments/Participation/SelfAssessment"
-    points: 10     
-- week: "13"
-  date: "2"
-  title: "Functional Programming"  
-- week: "14"
-  date: "0"
-  title: "Functional Programming"  
-- week: "14"
-  date: "1"
-  title: "Logic Programming" 
-  readings:
-  - rtitle: "PLC Ch. 8"
-    rlink: false   
   deliverables:   
   - dtitle: "Participation: Second Self-Assessment Due"
     dlink: "./Assignments/Participation/SelfAssessment"
