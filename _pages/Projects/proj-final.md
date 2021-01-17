@@ -51,7 +51,19 @@ In this project, you will propose a topic of your choosing and a group of at lea
 
 You may use git or another version control system to coordinate between your team.  **Each student shall contribute by checking in meaningful contributions to the project on the version control system.  If a version control system is not used, code sections should be commented with the initials or recognized pseudonym of the student.**
 
-You may design, document, implement a grammar of your choosing, and then develop a scanner and parser that interprets commands from that grammar according to any behavior you choose.  
+You may design, document, implement a grammar of your choosing, and then develop a scanner and parser that interprets commands from that grammar according to any behavior you choose.  Here are a few example proposals:
+
+* Scan and parse boolean expressions, interpreting to a truth statement, for example:
+```
+X = TRUE
+Y = FALSE
+(X OR Y) AND (X AND NOT Y)
+# outputs TRUE
+```
+* Scan, parse, and interpret a set of commands to automate several process, like backing up a directory of your computer, pulling or pushing to a repository, or sending an email to someone with parameters you specify.
+* Scan and parse a simple programming language grammar, and generate an abstract syntax tree representing each statement that you encounter.
+
+You may use utilities such as lex and yacc to help you build the underlying components.
 
 Finally, prepare as a team a project presentation that you will present live to the class for final presentations.  **Each student must have a speaking role** at the presentation.
 

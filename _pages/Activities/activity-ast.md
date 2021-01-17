@@ -7,6 +7,7 @@ excerpt: "CS374: Programming Language Principles - Abstract Syntax Trees"
 info: 
   goals: 
     - To define an Abstract Syntax Tree for a given grammar
+    - To augment grammars with attribute grammars
   models:
     - model: |
         xxx

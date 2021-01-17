@@ -6,7 +6,8 @@ excerpt: "CS374: Programming Language Principles - Programming Paradigms"
 
 info: 
   goals: 
-    - To define the imperative, declaritive (functional and logic), object-oriented, and scripting programming paradigms
+    - To define the imperative, declarative (functional and logic), object-oriented, and scripting programming paradigms
+    - To explore concurrency within programming paradigms
   models:
     - model: |
         xxx
