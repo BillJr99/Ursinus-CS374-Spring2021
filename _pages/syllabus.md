@@ -416,13 +416,12 @@ schedule:
   - dtitle: "Programming Assignment: Libraries Due"
     dlink: "./Assignments/Libraries"
     points: 100   
-- week: "12"
-  date: "0"
-  title: "Tokens and Scanning" 
-  deliverables:
   - dtitle: "Lab: Scanning Handed Out"
     dlink: "./Labs/Scanner"
-    points: 100   
+    points: 100     
+- week: "12"
+  date: "0"
+  title: "Tokens and Scanning"   
 - week: "12"
   date: "1"
   title: "Parsing and Interpreting" 
@@ -436,10 +435,17 @@ schedule:
   deliverables:
   - dtitle: "Final Project: Project and Presentation Handed Out"
     dlink: "Projects/Final"  
-    points: 100 
+    points: 100     
 - week: "13"
   date: "0"
   title: "Parsing and Interpreting"  
+  deliverables:
+  - dtitle: "Lab: Scanning Due"
+    dlink: "./Labs/Scanner"
+    points: 100   
+  - dtitle: "Lab: Parsing Handed Out"
+    dlink: "./Labs/Parser"
+    points: 100   
 - week: "13"
   date: "1"
   title: "Parsing and Interpreting"  
@@ -450,14 +456,7 @@ schedule:
 - week: "13"
   date: "2"
   title: "Abstract Syntax Trees"  
-  link: "./Activities/AST"
-  deliverables:
-  - dtitle: "Lab: Scanning Due"
-    dlink: "./Labs/Scanner"
-    points: 100   
-  - dtitle: "Lab: Parsing Handed Out"
-    dlink: "./Labs/Parser"
-    points: 100       
+  link: "./Activities/AST"      
   readings:
   - rtitle: "Compilers Ch. 6"
     rlink: false    

@@ -28,10 +28,17 @@ info:
       beginning: The program is submitted, but not according to the directions in one or more ways (for example, because it is lacking a readme writeup)
       progressing: The program is submitted according to the directions with a minor omission or correction needed, and with at least superficial responses to the bolded questions throughout
       proficient: The program is submitted according to the directions, including a readme writeup describing the solution, and thoughtful answers to the bolded questions throughout    
+  readings:
+    - rtitle: "Scanning Activity"
+      rlink: "../Activities/TokensScanning"    
   
 tags:
   - scanner
   
 ---
 
-The purpose of this lab is to implement a scanner 
+The purpose of this lab is to implement a scanner that returns a set of predefined tokens.  To do this, write a program that defines a number of constants representing the types of tokens you wish to return.  Then, read from standard input a set of text.  As you read each character of text, determine if it represents one of the tokens, continuing to read until you have identified a token.  When you find that token, add the entire `String` and the token type to a data structure, and append them to an array.  
+
+When you are done, write a function called `getToken` that returns the next item in the array.  Iterate over the entire array and print the set of words and token ID numbers to the screen.
+
+The set of tokens that you decide to implement is up to you, and you can be creative about this.  You should support at least one reserved word, at least one numeric token, at least one operator (*i.e.*, `=`), and at least one textual identifier.
