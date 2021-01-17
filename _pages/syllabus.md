@@ -292,6 +292,10 @@ schedule:
 - week: "5"
   date: "1"
   title: "Regular Expressions" 
+  deliverables:
+  - dtitle: "Midterm Exam: Midterm Handed Out"
+    dlink: false
+    points: 100  
 - week: "5"
   date: "2"
   title: "Finite Automata" 
@@ -306,6 +310,9 @@ schedule:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
     points: 10 
+  - dtitle: "Midterm Exam: Midterm Due"
+    dlink: false
+    points: 100      
 - week: "6"
   date: "2"
   title: "Finite Automata"  
