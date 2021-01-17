@@ -57,12 +57,11 @@ muldiv: "*" | "/"
 num: [0-9]+
 ```
 
-Which we implemented as follows:
+Which we implemented as follows \[[^1]\] \[[^2]\]:
+
+### calc.c
 
 ```c
-// https://gist.github.com/mlabbe/81d667bac36aa60787fee60e3647a0a8
-// https://github.com/meyerd/flex-bison-example
-
 #include <stdio.h>
 #include <ctype.h>
 #include <stdlib.h>
@@ -190,3 +189,170 @@ int main(void) {
     return 0;
 }
 ```
+
+Notice the `term` and `factor` nonterminals require left factoring in order to properly implement repeating expressions.  Revise the grammar to factor these common productions, and include your revised grammar with your submission.  Then, modify the example recursive descent parser to call your new nonterminals.
+
+## Part 2: A Calculator Parser with Variable Assignments
+
+Consider our `flex` and `bison` scanner and parser definitions for a calculator grammar:
+
+### calc.l
+```
+%option noyywrap       
+
+%{
+#include <stdio.h>
+
+#define YY_DECL int yylex()
+
+#include "calc.tab.h"
+
+%}
+
+%%
+
+[ \t]	                ; // ignore all whitespace
+[0-9]+		            {yylval.ival = atoi(yytext); return T_INT;}
+"+"		                {return T_PLUS;}
+"-"		                {return T_MINUS;}
+"*"		                {return T_MULTIPLY;}
+"/"		                {return T_DIVIDE;}
+"("		                {return T_LEFT;}
+")"		                {return T_RIGHT;}
+\n                      {return T_NEWLINE;}
+
+%%
+```
+
+### calc.y
+```
+%{
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+extern int yylex();
+extern int yyparse();
+extern FILE* yyin;
+
+void yyerror(const char* s);
+
+%}
+
+%union {
+	int ival;
+}
+
+%token<ival> T_INT
+%token T_PLUS T_MINUS T_MULTIPLY T_DIVIDE T_LEFT T_RIGHT T_NEWLINE
+
+%type<ival> expr term factor
+%start calc
+
+%%
+
+calc:                               
+    | calc line                     
+
+line: T_NEWLINE  
+    | expr T_NEWLINE                { printf("%d\n", $1); } // no return value needed, no type 
+
+expr: term T_PLUS expr              { $$ = $1 + $3; }
+    | term T_MINUS expr             { $$ = $1 - $3; }
+    | term                          { $$ = $1; }
+ 
+term: factor T_MULTIPLY term        { $$ = $1 * $3; }
+    | factor T_DIVIDE term          { $$ = $1 / $3; }
+    | factor                        { $$ = $1; }
+    
+factor: T_INT                       { $$ = $1; }            // just resolve the value!
+      | T_LEFT expr T_RIGHT         { $$ = $2; }            // expr will resolve to a value!
+      
+%%
+
+int main() {
+    yyin = stdin;
+    
+    do {
+        yyparse();
+    } while(!feof(yyin));
+}
+
+void yyerror(const char* s) {
+	fprintf(stderr, "Parse error: %s\n", s);
+	exit(1);
+}
+```
+
+First, modify this scanner and parser to support floating point values instead of integer values.  You will modify your numeric token type to include an optional decimal point, and use the `atof` function to convert it to a floating point value.  You will also modify your types union in the parser to be a `float` type instead of an `int`.  Run your calculator with some test inputs to verify that it is working.
+
+Now, we will modify the grammar to support variable assignments.  To do this, we will support new grammar productions that allow storing an expression into a variable defined by an identifier that you can retrieve like a numeric value.  We will also add a type to our types `union` whose type is a `char*` (the name of the identifier variable).  Create a new token called `T_ID` (the name is arbitrary!) whose lexeme is one or more alphabetical characters, and a new token called `T_ASSIGN` that is the lexeme `:=`.  You'll have two new productions: a new `line` of the form `T_ID T_ASSIGN expr line`, and a new `factor` production that resolves to `T_ID`.  The type of the `T_ID` token will be text, so you can set the token type of whichever `union` element you associated with the `char*`.  
+
+### Symbol Table
+
+Let's add a symbol table linked list to the header definitions section of your parser file.  This will be a linked list of structures that contain a name, a type, and a value:
+
+```c
+struct symbol {
+    char* name;
+    int type;
+    union {
+        int ival;
+    } value;
+    struct symbol* next;
+};
+```
+
+If you encounter the assignment production, print the expression result like before, but now, also assign the value to the symbol table:
+
+```c
+struct symbol* sym = putsymbol($1, TYPE_IVAL); 
+sym->value.ival = $3;
+```
+
+Your `T_ID` `factor` production can retrieve this value from the linked list, and resolve to the value that it finds.  Since our example adds items to the list from the front, the most recent value is always bound to the symbol name.  So, you can return the first instance of the symbol.
+
+The code to manipulate the linked list (insert and search) is provided for you, and can also be included in the header definitions of your parser file.
+
+```c
+const int TYPE_IVAL = 0;
+struct symbol* symboltable = NULL;
+
+struct symbol* putsymbol(char* name, int type) {
+    struct symbol* sym = (struct symbol *) malloc(sizeof(struct symbol));
+    sym->type = type;
+    sym->name = malloc(strlen(name)+1);
+    strncpy(sym->name, name, strlen(name)+1);
+
+    if(type == TYPE_IVAL) {
+        sym->value.ival = 0;
+    }
+    
+    sym->next = symboltable;
+    symboltable = sym;
+    
+    return sym;
+}
+
+struct symbol* getsymbol(char* name) {
+    struct symbol* p = symboltable;
+    struct symbol* result = NULL;
+    
+    while(p != NULL) {
+        if(strcmp(p->name, name) == 0) {
+            // only catch the first instance, since newer items are placed in the front of the list
+            if(result == NULL) {
+                result = p;
+            }
+            
+            break;
+        }
+    }
+    
+    return result;
+}
+```
+
+[^1]: https://gist.github.com/mlabbe/81d667bac36aa60787fee60e3647a0a8
+[^2]: https://github.com/meyerd/flex-bison-example
