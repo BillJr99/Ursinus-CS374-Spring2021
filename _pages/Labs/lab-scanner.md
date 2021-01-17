@@ -9,7 +9,6 @@ info:
   points: 100
   goals:
     - To create a lookahead scanner to identify lexemes in an input text
-    - To use tools like lex to create a scanner for a given set of identifiers from a grammar
   rubric:
     - weight: 60
       description: Algorithm Implementation
@@ -35,4 +34,4 @@ tags:
   
 ---
 
-The purpose of this lab is to xxx
+The purpose of this lab is to implement a scanner 
