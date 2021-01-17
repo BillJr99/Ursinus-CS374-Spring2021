@@ -145,13 +145,13 @@ goals:
 
 grade_breakdown:
 - category: "Programming Assignments"
-  weight: "25%"
+  weight: "35%"
 - category: "Labs"
-  weight: "40%"
+  weight: "20%"
 - category: "Midterm Exam"
   weight: "15%"
 - category: "Final Project"
-  weight: "10%"
+  weight: "20%"
 - category: "Class Participation and Quizzes"
   weight: "10%"
 
@@ -216,38 +216,48 @@ schedule:
     points: 10     
 - week: "1"
   date: "2"
-  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"
+  title: "Object Oriented Languages"
   deliverables:
   - dtitle: "Participation: Pre-Assessment Due"
     dlink: "./Assignments/Participation/PreAssessment"
-    points: 10   
-- week: "2"
-  date: "0"
-  title: "Object Oriented Languages"  
+    points: 10 
+  - dtitle: "Lab: Shell Handed Out"
+    dlink: "./Labs/Shell"
+    points: 100    
   readings:
   - rtitle: "PLC Ch. 6"
-    rlink: false    
+    rlink: false      
+- week: "2"
+  date: "0"
+  title: "Functional Programming"  
+  readings:
+  - rtitle: "PLC Ch. 7"
+    rlink: false   
 - week: "2"
   date: "1"
   title: "Functional Programming" 
-  readings:
-  - rtitle: "PLC Ch. 7"
-    rlink: false     
 - week: "2"
   date: "2"
-  title: "Functional Programming"  
-- week: "3"
-  date: "0"
   title: "Logic Programming"  
   readings:
   - rtitle: "PLC Ch. 8"
-    rlink: false 
+    rlink: false   
+  deliverables:
+  - dtitle: "Lab: Shell Due"
+    dlink: "./Labs/Shell"
+    points: 100  
+  - dtitle: "Programming Assignment: Functional Programming Handed Out"
+    dlink: "./Assignments/Functional"
+    points: 100       
 - week: "3"
-  date: "1"
+  date: "0"
   title: "Scripting Languages" 
   readings:
   - rtitle: "Bash Scripting Tutorial"
-    rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"
+    rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
+- week: "3"
+  date: "1"
+  title: "Scripting Languages" 
 - week: "3"
   date: "2"
   title: "Syntax"
@@ -264,7 +274,14 @@ schedule:
   title: "Binding and Scope"  
 - week: "4"
   date: "2"
-  title: "Binding and Scope"  
+  title: "Binding and Scope"
+  deliverables:
+  - dtitle: "Programming Assignment: Functional Programming Due"
+    dlink: "./Assignments/Functional"
+    points: 100     
+  - dtitle: "Programming Assignment: Shell Scripting Handed Out"
+    dlink: "./Assignments/Scripting"
+    points: 100      
 - week: "5"
   date: "0"
   title: "Regular Expressions"
@@ -274,7 +291,7 @@ schedule:
     rlink: false    
 - week: "5"
   date: "1"
-  title: "Regular Expressions"  
+  title: "Regular Expressions" 
 - week: "5"
   date: "2"
   title: "Finite Automata" 
@@ -292,6 +309,13 @@ schedule:
 - week: "6"
   date: "2"
   title: "Finite Automata"  
+  deliverables:
+  - dtitle: "Programming Assignment: Shell Scripting Due"
+    dlink: "./Assignments/Scripting"
+    points: 100   
+  - dtitle: "Programming Assignment: Regular Expressions Handed Out"
+    dlink: "./Assignments/Regex"
+    points: 100      
 - week: "7"
   date: "0"
   title: "Data Types"  
@@ -307,7 +331,7 @@ schedule:
     rlink: false    
 - week: "7"
   date: "1"
-  title: "Data Types"  
+  title: "Data Types"     
 - week: "7"
   date: "2"
   title: "Data Types"  
@@ -323,7 +347,14 @@ schedule:
   title: "Code Structure: Expressions and Conditionals" 
 - week: "8"
   date: "2"
-  title: "Code Structure: Functions and Exceptions"  
+  title: "Code Structure: Functions and Exceptions" 
+  deliverables:
+  - dtitle: "Programming Assignment: Regular Expressions Due"
+    dlink: "./Assignments/Regex"
+    points: 100   
+  - dtitle: "Programming Assignment: Automata Handed Out"
+    dlink: "./Assignments/Automata"
+    points: 100    
 - week: "9"
   date: "0"
   title: "Data Structures and Generics"  
@@ -352,24 +383,39 @@ schedule:
   title: "Bytecode"  
   readings:
   - rtitle: "Compilers Ch. 8"
-    rlink: false       
+    rlink: false  
+  deliverables:
+  - dtitle: "Programming Assignment: Automata Due"
+    dlink: "./Assignments/Automata"
+    points: 100  
+  - dtitle: "Programming Assignment: Libraries Handed Out"
+    dlink: "./Assignments/Libraries"
+    points: 100      
 - week: "11"
   date: "0"
   title: "Grammars" 
-  link: "./Activities/Grammars"  
+  link: "./Activities/Grammars"   
   readings:
   - rtitle: "Compilers Ch. 3"
     rlink: false    
 - week: "11"
   date: "1"
-  title: "Ambiguity in Grammars"  
+  title: "Ambiguity in Grammars"       
 - week: "11"
   date: "2"
   title: "Tokens and Scanning"
   link: "./Activities/TokensScanning"
+  deliverables:
+  - dtitle: "Programming Assignment: Libraries Due"
+    dlink: "./Assignments/Libraries"
+    points: 100   
 - week: "12"
   date: "0"
-  title: "Tokens and Scanning"   
+  title: "Tokens and Scanning" 
+  deliverables:
+  - dtitle: "Lab: Scanning Handed Out"
+    dlink: "./Labs/Scanner"
+    points: 100   
 - week: "12"
   date: "1"
   title: "Parsing and Interpreting" 
@@ -398,6 +444,13 @@ schedule:
   date: "2"
   title: "Abstract Syntax Trees"  
   link: "./Activities/AST"
+  deliverables:
+  - dtitle: "Lab: Scanning Due"
+    dlink: "./Labs/Scanner"
+    points: 100   
+  - dtitle: "Lab: Parsing Handed Out"
+    dlink: "./Labs/Parser"
+    points: 100       
   readings:
   - rtitle: "Compilers Ch. 6"
     rlink: false    
@@ -415,6 +468,9 @@ schedule:
   date: "0"
   title: "Review" 
   deliverables:
+  - dtitle: "Lab: Parsing Due"
+    dlink: "./Labs/Parser"
+    points: 100         
   - dtitle: "Final Project: Project and Presentation Due"
     dlink: "Projects/Final"
     points: 100  
