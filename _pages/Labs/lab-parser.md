@@ -9,6 +9,7 @@ info:
   points: 100
   goals:
     - To implement a recursive descent parser for a grammar
+    - To use tools like lex to create a scanner for a given set of identifiers from a grammar
     - To use tools like yacc to create a parse table and parser for a grammar
   rubric:
     - weight: 60
