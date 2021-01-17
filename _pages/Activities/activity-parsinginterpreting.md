@@ -9,6 +9,7 @@ info:
     - To remove left recursion and to left factor a grammar for LL(1) parsing, where possible
     - To describe the components of an LL(k) and an LR(k) parser
     - To implement a simple parser given a grammar, from code or using tools such as lex and yacc
+    - To generate a parse table for a given grammar
   models:
     - model: |
         xxx
