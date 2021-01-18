@@ -34,4 +34,39 @@ tags:
   
 ---
 
-The purpose of this assignment is to xxx
+The purpose of this assignment is to write a shell script to help automate a task, and to explore the language by which your shell exposes its functionality to you.  Shell scripting allows you to write code, including variables, conditionals, and interation, that executes shell commands.  Although your shell primarily manages the running processes on your computer, it exposes that functionality with a Turing complete language!
+
+## Part 1: Creating an MD5 Dictionary
+Open your shell and execute the following command:
+
+`find . -type 'f' -exec md5sum {} \;`
+
+This command searches for all files (per the `-type 'f'` clause) under your current working directory and recursively into all subdirectories.  It also executes a command on each file: specifically, it computes an MD5 hash on the contents of each file.  This hash changes if the contents of the file changes.  The format of each line is:
+
+```
+<md5 hash><space><space><file path>\n
+```
+
+Use the `cut` or `awk` command to read the hash and the file path into two separate `bash` variables.  Write those to a file in the following format:
+
+```
+<file path><space><md5 hash>\n
+```
+
+Let's call this file `md5dict.txt`.  Arrange this into a shell script and test it.
+
+## Part 2: Checking for Changes
+
+In your shell script (or in a new shell script), before you create the MD5 dictionary file from Part 1, check if the `md5dict.txt` file already exists.  If it does, read each entry in the file and the MD5 hash into two `bash` variables.  Use the file path variable, and if the file exists, compute `md5sum` on the file, storing the current MD5 hash into another variable.  If the MD5 does not match the one you read in your original dictionary, print out that the file has changed to the screen.  If the file no longer exists, print out a message indicating that as well.  If the file exists and the MD5 hashes match, print nothing (this way, you have a concise log of all the files that have changed in your directory!).  
+
+Finally, we need to see if any new files were created.  Use a `find` command to find all files in your current working directory.  For each one, `grep` for it in your `md5dict.txt` file.  If no match is found, print out hat you have identified a new file in your working directory.
+
+To find all files in your directory and loop over each one, you can use this snippet:
+
+```
+find . -print0 | while IFS= read -r -d '' line; do 
+    # Your code here, which can use the ${line} variable
+done
+```
+
+Once you are done, you can proceed with your code from Part 1, so that you re-generate a new `md5dict.txt` file.  Alternatively, you can organize Part 1 and Part 2 into two separate shell scripts, if you prefer.
