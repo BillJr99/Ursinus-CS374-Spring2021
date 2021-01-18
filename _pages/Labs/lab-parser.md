@@ -354,5 +354,7 @@ struct symbol* getsymbol(char* name) {
 }
 ```
 
+## References:
+
 [^1]: https://gist.github.com/mlabbe/81d667bac36aa60787fee60e3647a0a8
 [^2]: https://github.com/meyerd/flex-bison-example
