@@ -170,11 +170,11 @@ info:
       questions:
         - "What are the advantages and disadvantages of each approach?"         
         - "Which version do you find more convenient and why?"         
-  readings:
-    - rtitle: "Concise Introduction to Prolog"
-      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
-    - rtitle: "The Scheme Programming Language"
-      rlink: "https://www.scheme.com/tspl3/"
+  additional_reading:
+    - title: "Concise Introduction to Prolog"
+      link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
+    - tilte: "The Scheme Programming Language"
+      link: "https://www.scheme.com/tspl3/"
         
 tags:
   - paradigms
