@@ -69,8 +69,8 @@ info:
       questions:
         - xxx
   additional_reading:
-    title: "Formal Languages Notes"
-    link: "https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf"
+    - title: "Formal Languages Notes"
+      link: "https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf"
       
 tags:
   - grammar
