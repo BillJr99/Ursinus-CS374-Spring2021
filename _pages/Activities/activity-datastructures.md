@@ -63,6 +63,8 @@ info:
   additional_reading:
     - title: "Lambda Calculus"
       link: "https://plato.stanford.edu/entries/lambda-calculus/"
+    - title: "Lambda Calculus Notes"
+      link: "http://www.cs.unc.edu/~stotts/723/Lambda/"
         
 tags:
   - datastructures
