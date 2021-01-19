@@ -147,7 +147,35 @@ info:
         - "What is a statement in this language?"
         - "How are variables expanded?"
         - "What potential benefit can you see with the use of shell scripting?" 
+    - model: |
+        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        heights = [50, 62, 73, 58, 46, 49, 43]
+        minheight = 48
+        canride = []
+        canride2 = []
         
+        # version 1
+        for height in heights:
+            if height > minheight:
+                canride.append(height)
+          
+        # version 2
+        canride2 = [height for height in heights if height > minheight]  
+
+        # version 3
+        canridebool = list(map(lambda height: height > minheight, heights))
+        canride3 = [x[0] for x in zip(heights, canridebool) if x[1]]
+        ]]></script> 
+      title: "Applications of the Declarative Paradigm - Pythonic List Comprehension"
+      questions:
+        - "What are the advantages and disadvantages of each approach?"         
+        - "Which version do you find more convenient and why?"         
+  additional_reading:
+    - title: "Concise Introduction to Prolog"
+      link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
+    - tilte: "The Scheme Programming Language"
+      link: "https://www.scheme.com/tspl3/"
+      
 tags:
   - paradigms
   
