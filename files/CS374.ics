@@ -142,7 +142,7 @@ DTSTAMP:20210127T000000Z
 DTSTART;VALUE=DATE:20210127
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/Paradigms\nReading: Concise Introduction to Prolog https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html\nReading: The Scheme Programming Language https://www.scheme.com/tspl3/\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/Paradigms\nReading: Concise Introduction to Prolog https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html\nReading: The Scheme Programming Language https://www.scheme.com/tspl3/\nReading: Bash Syntax Reference https://tiswww.case.edu/php/chet/bash/bashref.html\nDeliverable: Programming Assignment: Warmup Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Warmup
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
