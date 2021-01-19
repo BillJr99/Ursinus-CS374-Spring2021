@@ -12,16 +12,16 @@ info:
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         I think you are right!!!
-        What do you think of this?
+        What does this mean?
         WHY DOES IT WORK THIS WAY
-        What else do you think?
+        What else can we do?
         (610)555-1212
         ]]></script> 
         <br>
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         .*!{3}.*
-        What.*do
-        What.*do*
+        What.*does
+        What.*does*
         [A-Z ]+
         \(?\d{3}\)?\d{3}-\d{4}
         ]]></script> 
@@ -34,7 +34,7 @@ info:
       title: Languages for a Finite State Machine
       questions:
         - "What pattern of A and B would take one from Shipwreck Bay to Treasure Island?"
-        - "What regular expression automatically checks that a series of navigational guesses would lead from Shipwreck Bay to Treasure Island?  Note that [AB] means to match either character A or B once."
+        - "What regular expression automatically checks that a series of navigational guesses would lead from Shipwreck Bay to Treasure Island?  Note that <code>[AB]</code> means to match either character A or B once."
   additional_reading:
     - title: "Regex Parser Online"
       link: "https://regex101.com/"    
