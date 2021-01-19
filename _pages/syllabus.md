@@ -382,6 +382,7 @@ schedule:
 - week: "9"
   date: "1"
   title: "Data Structures and the Lambda Calculus"
+  readings:
   - rtitle: "Lambda Calculus"
     rlink: "https://plato.stanford.edu/entries/lambda-calculus/"  
 - week: "9"
