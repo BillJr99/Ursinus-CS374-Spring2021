@@ -216,6 +216,25 @@ info:
       title: "Throwing Exceptions"
       questions:
         - "How can this approach be used to enforce preconditions?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        public class Driver {
+            public double doSomething(int x) {
+                ArrayList<String> x = new ArrayList<String>();
+                
+                // work with x
+            }
+            
+            public static void main(String[] args) {
+                doSomething();
+            }
+        }
+        ]]></script> 
+      title: "Garbage Collection"
+      questions:
+        - "When is <code>x</code> discarded?"
+        - "How does this differ from C++?"
+        - "What are some strategies for determining when it is safe to garbage collect a variable?"
   additional_reading:
     - title: "BASIC Syntax Reference"
       link: "https://en.wikipedia.org/wiki/BASIC#Syntax"

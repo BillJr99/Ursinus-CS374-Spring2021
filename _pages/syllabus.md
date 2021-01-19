@@ -361,7 +361,10 @@ schedule:
   title: "Code Structure: Expressions and Conditionals" 
 - week: "8"
   date: "2"
-  title: "Code Structure: Functions and Exceptions" 
+  title: "Code Structure: Functions, Exceptions, and Memory Management" 
+  readings:
+  - rtitle: "Compilers Ch. 9"
+    rlink: false 
   deliverables:
   - dtitle: "Programming Assignment: Regular Expressions Due"
     dlink: "./Assignments/Regex"
@@ -376,14 +379,11 @@ schedule:
   readings:
   - rtitle: "PLC Ch. 5"
     rlink: false  
-  - rtitle: "Lambda Calculus"
-    rlink: "https://plato.stanford.edu/entries/lambda-calculus/"
 - week: "9"
   date: "1"
-  title: "Memory Management"  
-  readings:
-  - rtitle: "Compilers Ch. 9"
-    rlink: false     
+  title: "Data Structures and the Lambda Calculus"
+  - rtitle: "Lambda Calculus"
+    rlink: "https://plato.stanford.edu/entries/lambda-calculus/"  
 - week: "9"
   date: "2"
   title: "The Compilation and Linking Process"  
