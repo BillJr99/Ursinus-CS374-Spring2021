@@ -40,7 +40,7 @@ info:
             <td class="tg-0pky"><a href="https://en.wikipedia.org/wiki/Recursively_enumerable_language"><span style="text-decoration:none;color:#0B0080;background-color:initial">Recursively enumerable</span></a></td>
             <td class="tg-0pky"><a href="https://en.wikipedia.org/wiki/Turing_machine"><span style="text-decoration:none;color:#0B0080;background-color:initial">Turing machine</span></a></td>
             <td class="tg-0pky"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/902fc01e3f2cc85935e36efe834b543eb6b19d5b" alt="{\displaystyle \gamma \rightarrow \alpha }" width="46" height="17"><br>(no constraints)</td>
-            <td class="tg-0pky"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46f75a36ee91fb70c39b78145c087df4abdb1035" alt="{\displaystyle L=\{w|w}" width="71" height="21">&nbsp;describes a terminating Turing machine&nbsp;<img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2cf208e5d370391e66767f13641bd5ee6ad93825" alt="\}" width="8" height="21"></td>
+            <td class="tg-0pky"><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/46f75a36ee91fb70c39b78145c087df4abdb1035" alt="{\displaystyle L=\{w|w}" width="71" height="21"><br>describes a terminating Turing machine<br><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/2cf208e5d370391e66767f13641bd5ee6ad93825" alt="\}" width="8" height="21"></td>
           </tr>
           <tr>
             <td class="tg-fymr">Type-1</td>
