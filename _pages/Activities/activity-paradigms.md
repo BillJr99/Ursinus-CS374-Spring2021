@@ -121,6 +121,32 @@ info:
       questions:
         - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
         - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?"  
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         % From https://en.wikipedia.org/wiki/Prolog
+         perfect(N) :-
+            between(1, inf, N), U is N // 2,
+            findall(D, (between(1,U,D), N mod D =:= 0), Ds),
+            sumlist(Ds, N).
+        ]]></script> 
+      title: "Declarative Languages - Prolog"
+      questions:
+        - "Describe, in your own words, what this program does."  
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         #!/bin/bash
+         
+         COURSE=CS374
+         cd ${COURSE}
+         
+         FILES=$(ls)
+         echo ${FILES}
+        ]]></script> 
+      title: "Declarative Languages - Scripting"
+      questions:
+        - "What is a statement in this language?"
+        - "How are variables expanded?"
+        - "What potential benefit can you see with the use of shell scripting?" 
         
 tags:
   - paradigms
