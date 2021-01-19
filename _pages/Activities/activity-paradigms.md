@@ -64,6 +64,42 @@ info:
         - "How many copies of <code>discriminant</code> exist on the call to <code>calcroot</code>?"
         - "How does the <code>calcroot</code> function know to use the <code>discriminant</code> variable in its local function?"
         - "What would happen if <code>discriminant</code> was modified inside <code>calcroot</code>?  Why is this different than for the <code>root</code> variable?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        (define L (list 'a 'b 'c))
+        (car L)
+        (cdr L)
+        
+        (define x (+ 3 2))
+        (+ x 5)
+        
+        (define add +)
+        (add 3 2)
+        ]]></script>
+        <br>
+        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        (define square
+          (lambda(n)
+            (* n n)
+          )
+        )
+
+        (define pow
+          (lambda(n k)
+            (if (= k 0)
+              1
+              (* n (pow n (- k 1)))
+            )
+          )
+        )
+              
+        (square (pow 5 3))
+        ]]></script> 
+      title: "Declarative Languages - Functional"
+      questions:
+        - "What is a statement in Scheme?"
+        - "What shared variables exist in this program?"
+        - "What are some potential advantages of Functional Programming as a paradigm?" 
         
 tags:
   - paradigms
