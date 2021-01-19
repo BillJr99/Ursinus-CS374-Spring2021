@@ -1,8 +1,8 @@
 ---
 layout: activity
 permalink: /Activities/Syntax
-title: "CS374: Programming Language Principles - Syntax"
-excerpt: "CS374: Programming Language Principles - Syntax"
+title: "CS374: Programming Language Principles - Syntax and Semantics"
+excerpt: "CS374: Programming Language Principles - Syntax and Semantics"
 
 info: 
   goals: 
@@ -38,6 +38,8 @@ info:
                         taxrate = 0.1;
                 else
                     taxrate = 0.15;
+                    
+                // taxamount = taxrate * income;
             }
         }
         ]]></script> 
@@ -46,6 +48,7 @@ info:
         - "What is the general syntax of a variable declartaion?"
         - "What is the type of each variable in this program?  Is this idea part of the syntax or at a higher level of abstraction?  How does this relate to seeing a note on a music sheet versus playing a sound at a particular frequency?"
         - "What is the tax rate for a person age 20 with an income of 20000?  What should it be?"
+        - "What type should <code>taxamount</code> be? How do you know?"
         
 tags:
   - syntax

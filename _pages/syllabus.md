@@ -267,7 +267,7 @@ schedule:
   title: "Scripting Languages" 
 - week: "3"
   date: "2"
-  title: "Syntax"
+  title: "Syntax and Semantics"
   link: "./Activities/Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
