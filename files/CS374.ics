@@ -457,7 +457,7 @@ DTSTAMP:20210319T000000Z
 DTSTART;VALUE=DATE:20210319
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nDeliverable: Programming Assignment: Regular Expressions Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Regex\nDeliverable: Programming Assignment: Automata Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Automata
+DESCRIPTION:\nReading: Compilers Ch. 9\nDeliverable: Programming Assignment: Regular Expressions Due https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Regex\nDeliverable: Programming Assignment: Automata Handed Out https://www.billmongan.com/Ursinus-CS374-Fall2021/./Assignments/Automata
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -466,7 +466,7 @@ DTSTAMP:20210322T000000Z
 DTSTART;VALUE=DATE:20210322
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/DataStructures\nReading: PLC Ch. 5\nReading: Lambda Calculus https://plato.stanford.edu/entries/lambda-calculus/
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/DataStructures\nReading: PLC Ch. 5
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
@@ -475,7 +475,7 @@ DTSTAMP:20210324T000000Z
 DTSTART;VALUE=DATE:20210324
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: Compilers Ch. 9
+DESCRIPTION:\nReading: Lambda Calculus https://plato.stanford.edu/entries/lambda-calculus/
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
