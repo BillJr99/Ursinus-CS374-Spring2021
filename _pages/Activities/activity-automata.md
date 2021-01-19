@@ -27,7 +27,7 @@ info:
   additional_reading:
     - title: "FSM Designer"
       link: "http://madebyevan.com/fsm/"
-    - tile: "FSM Simulator"
+    - title: "FSM Simulator"
       link: "http://ivanzuzak.info/noam/webapps/fsm_simulator/"
       
 tags:
