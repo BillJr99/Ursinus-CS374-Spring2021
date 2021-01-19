@@ -11,7 +11,7 @@ info:
   models:
     - model: |
         <a title="via Wikimedia Commons" href="https://upload.wikimedia.org/score/7/f/7fz7p0lxt24ipwf4i11789agl7niw0r/7fz7p0lx.png"><img alt="Auld Lang Syne" src="https://upload.wikimedia.org/score/7/f/7fz7p0lxt24ipwf4i11789agl7niw0r/7fz7p0lx.png"></a>
-      title: Semiotics: Signs and Symbols
+      title: "Semiotics: Signs and Symbols"
       questions:
         - "What word arrangements can you identify in this passage, or in general prose?"
         - "What are the general phrase structures that you can see?"
