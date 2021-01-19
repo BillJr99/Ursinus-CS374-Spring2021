@@ -208,8 +208,13 @@ schedule:
     rlink: false  
 - week: "1"
   date: "1"
-  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented"  
+  title: "Programming Paradigms: Imperative, Declaritive, Functional, Object-Oriented, and Scripting"  
   link: "./Activities/Paradigms"
+  readings:
+    - rtitle: "Concise Introduction to Prolog"
+      rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
+    - rtitle: "The Scheme Programming Language"
+      rlink: "https://www.scheme.com/tspl3/"
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
