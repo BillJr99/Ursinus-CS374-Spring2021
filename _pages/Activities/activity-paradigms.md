@@ -173,7 +173,7 @@ info:
   additional_reading:
     - title: "Concise Introduction to Prolog"
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
-    - tilte: "The Scheme Programming Language"
+    - title: "The Scheme Programming Language"
       link: "https://www.scheme.com/tspl3/"
       
 tags:
