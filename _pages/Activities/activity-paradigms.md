@@ -148,7 +148,7 @@ info:
         - "How are variables expanded?"
         - "What potential benefit can you see with the use of shell scripting?" 
     - model: |
-        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         heights = [50, 62, 73, 58, 46, 49, 43]
         minheight = 48
         canride = []
