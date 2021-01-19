@@ -27,13 +27,150 @@ info:
             }
         }
         ]]></script> 
-      title: "Imperative Languages and the Object-Oriented Paradigm"
+      title: "Imperative Languages"
       questions:
         - "What defines a statement?"
         - "What, in general, does a statement realy do?"
         - "At what points do the value of root change?"
         - "What would happen if <code>a</code> is 0?"
         - "How can we represent this program using an Object-Oriented style?  What state might the object represent?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[  
+        import java.util.Random;
+        
+        public abstract class Vehicle {
+            protected int gear;
+            protected boolean parked;
+            protected int speed;
+            protected boolean locked;
+         
+            public Vehicle() {
+               this.gear = 1;
+               this.parked = true;
+               this.speed = 0;
+               this.locked = true;
+            }
+         
+            public void drive(int speed) {
+               if(this.parked == true) {
+                 this.parked = false;
+               }
+               this.speed = speed;
+            }
+         
+            // return a boolean if the vehicle is parked
+            public abstract boolean stop();
+         
+            public int getSpeed() {
+               return this.speed;
+            }
+         
+            public void unlock() {
+               this.locked = false;
+            }
+         
+            public void lock() {
+               this.locked = true;
+            }
+        }
+        
+        public interface Home {
+            public int cook();
+         
+            public void makeBed();
+        }
+
+        public class Car extends Vehicle {
+             public Car() {
+               super();
+             }
+             
+             public void drive(int speed) {
+               super.drive(speed);
+             
+               this.gear = this.speed / 10;
+             }
+             
+             // return a boolean if the vehicle is parked
+             public boolean stop() {
+               this.speed = 0;
+               this.gear = 1;
+               return this.parked;
+            }
+        }
+        
+        // Unlike interfaces, you can only extend a single class
+        public class MotorHome extends Vehicle implements Home {
+             private boolean bedmade;
+             
+             public MotorHome() {
+               super();
+               this.bedmade = true;
+             }
+             
+             public void drive(int speed) {
+               super.drive(speed);
+             
+               this.gear = this.speed / 5;
+             }
+             
+             // return a boolean if the vehicle is parked
+             public boolean stop() {
+               this.speed = 0;
+               this.gear = 1;
+               return this.parked;
+             }
+             
+             public int cook() {
+               return 1; // yum?
+             }
+             
+             public void makeBed() {
+               this.bedmade = true;
+             }
+             
+             public boolean isBedMade() {
+               return this.bedmade;
+             }
+        }
+
+        class Main {
+             public static void main(String[] args) {
+               Random r = new Random();
+             
+               Vehicle[] vehicles = new Vehicle[2];
+             
+               Car c = new Car();
+               MotorHome m = new MotorHome();
+             
+               vehicles[0] = c;
+               vehicles[1] = m;
+             
+               m.makeBed();
+             
+               for(Vehicle v: vehicles) {
+                 v.drive(r.nextInt(50));
+               }
+             
+               // Methods in the Interface can be called on variables whose type is just the interface, no matter what it really is!
+               System.out.println("How fast is the car driving? " + vehicles[0].getSpeed());
+             
+               System.out.println("How about the Motor Home? " + vehicles[1].getSpeed());
+             
+               // Methods specific to a class can always be called from the object.
+               System.out.println("Is the Motor Home bed made? " + m.isBedMade());
+             }
+        }
+
+        ]]></script>    
+      title: "The Object-Oriented Paradigm"
+      questions:
+        - How did each file change above by converting the <code>Vehicle</code> interface to a class?
+        - By converting the <code>Vehicle</code> interface to a class, what can we now define in a <code>Vehicle</code> that we could not define in the <code>interface</code>?
+        - You can implement an <code>interface</code>; what is the keyword to subclass a class?
+        - From context, what do you think the abstract keyword means in the <code>Vehicle</code> class?
+        - From context, what do you think the call to <code>super()</code> does?
+        - Notice that some elements are scoped to be <code>public</code> and <code>private</code>, like before, but now some items are <code>protected</code>.  Which items are <code>protected</code>, and in which files do they reside?  What do you think this scope allows/disallows?
         - "Sketch out an object-oriented design representing students and courses, in which students are enrolled in one or more sections of the course."
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
@@ -175,7 +312,11 @@ info:
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
     - title: "The Scheme Programming Language"
       link: "https://www.scheme.com/tspl3/"
-      
+    - title: "Bash Syntax Reference"
+      link: "https://tiswww.case.edu/php/chet/bash/bashref.html"
+    - title: "Bash Scripting Tutorial"
+      link: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners" 
+    
 tags:
   - paradigms
   

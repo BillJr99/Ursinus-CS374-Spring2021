@@ -215,6 +215,8 @@ schedule:
       rlink: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
     - rtitle: "The Scheme Programming Language"
       rlink: "https://www.scheme.com/tspl3/"
+    - rtitle: "Bash Syntax Reference"
+      rlink: "https://tiswww.case.edu/php/chet/bash/bashref.html"
   deliverables:
   - dtitle: "Programming Assignment: Warmup Due"
     dlink: "./Assignments/Warmup"
