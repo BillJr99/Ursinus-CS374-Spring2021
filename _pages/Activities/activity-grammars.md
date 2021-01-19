@@ -67,7 +67,43 @@ info:
         </table>
       title: Chomsky Hierarchy of Languages
       questions:
-        - xxx
+        - "What kind of language and machine would be used to balance parenthesis, and why?"
+        - "Why can't the context-free language be expressed with a regular language or finite state machine?"
+        - "What do you think is added to a finite state machine to create a push-down automata?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        S -> nil
+        S -> a
+        S -> b
+        S -> aSa
+        S -> bSb
+        ]]></script> 
+      title: "Grammar Definition"
+      questions:
+        - "What does this language produce?"
+        - "How can this be modified to specify a language that accepts <code>String</code>s of <code>n</code> a characters followed by <code>n</code> b characters?"
+        - "How might we parse a grammar?  How can we make it easy to parse a grammar?  For example, would it help if every production began with a unique terminal?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         selection-statement:
+            | IF ( expression ) statement
+            | IF ( expression ) statement ELSE statement
+            
+        open_statement: IF '(' expression ')' statement
+                      | IF '(' expression ')' closed_statement ELSE open_statement
+                      ;
+
+        closed_statement: non_if_statement
+                        | IF '(' expression ')' closed_statement ELSE closed_statement
+                        ;
+
+        non_if_statement: ...
+                        ;
+        ]]></script> 
+      title: "Ambiguous Grammars"
+      questions:
+        - "How might <code>selection-statement</code> lead to a dangling else block ambiguity in a nested if statement?"
+        - "How is the ambiguity resolved using the <code>open_statement</code> instead?"
   additional_reading:
     - title: "Formal Languages Notes"
       link: "https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf"
