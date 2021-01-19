@@ -104,6 +104,33 @@ info:
       questions:
         - "How might <code>selection-statement</code> lead to a dangling else block ambiguity in a nested if statement?"
         - "How is the ambiguity resolved using the <code>open_statement</code> instead?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        E: N
+        E: E + E
+        E: E * E
+        E: (E)
+        N: [0-9]+        
+        ]]></script> 
+      title: "An Example Grammar with an Ambiguity"
+      questions:
+        - "What are two different ways in which the expression <code>8*9+5</code> can be parsed into a parse tree?  What does each parse tree look like?"
+        - "Can the resulting computed values be different as a result of this ambiguity?"
+        - "How can we resolve this ambiguity?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+          E: T + E
+              | T
+          T: F * T
+              | F
+          F: N
+              | (E)
+          N: [0-9]+       
+        ]]></script> 
+      title: "An Example Grammar without an Ambiguity"
+      questions:
+        - "How would the expression <code>8*9+5</code> be parsed into a parse tree?  How about <code>5+8*9</code>?"
+        - "Given an ambiguous grammar, is there an algorithm that can disambiguate it, or do we have to design against the ambiguity up front?  Why or why not?"
   additional_reading:
     - title: "Formal Languages Notes"
       link: "https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf"
