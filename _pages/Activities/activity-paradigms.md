@@ -61,7 +61,7 @@ info:
       questions:
         - "At what points do the value of <code>root</code> change?  Where are they changed, and where are they effective?"
         - "What would happen if <code>a</code> is 0?" 
-        - How many copies of <code>discriminant</code> exist on the call to <code>calcroot</code>?"
+        - "How many copies of <code>discriminant</code> exist on the call to <code>calcroot</code>?"
         - "How does the <code>calcroot</code> function know to use the <code>discriminant</code> variable in its local function?
         - "What would happen if <code>discriminant</code> was modified inside <code>calcroot</code>?  Why is this different than for the <code>root</code> variable?"
     - model: |
@@ -99,7 +99,7 @@ info:
       questions:
         - "What is a statement in Scheme?"
         - "What shared variables exist in this program?"
-        - What are some potential advantages of Functional Programming as a paradigm?"  
+        - "What are some potential advantages of Functional Programming as a paradigm?"  
     - model: |
         <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
            course(CS173).
