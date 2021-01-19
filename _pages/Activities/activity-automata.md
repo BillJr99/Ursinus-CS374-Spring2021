@@ -24,7 +24,7 @@ info:
       title: SQL SELECT Language Automata
       questions:
         - "What language is described by this automaton?"
-  additional_reading
+  additional_reading:
     - title: "FSM Designer"
       link: "http://madebyevan.com/fsm/"
     - tile: "FSM Simulator"
