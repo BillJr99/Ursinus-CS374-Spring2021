@@ -65,7 +65,7 @@ info:
         - "How does the <code>calcroot</code> function know to use the <code>discriminant</code> variable in its local function?"
         - "What would happen if <code>discriminant</code> was modified inside <code>calcroot</code>?  Why is this different than for the <code>root</code> variable?"
     - model: |
-        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         (define L (list 'a 'b 'c))
         (car L)
         (cdr L)
@@ -77,7 +77,7 @@ info:
         (add 3 2)
         ]]></script>
         <br>
-        <script type="syntaxhighlighter" class="brush: plain"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         (define square
           (lambda(n)
             (* n n)
@@ -100,6 +100,27 @@ info:
         - "What is a statement in Scheme?"
         - "What shared variables exist in this program?"
         - "What are some potential advantages of Functional Programming as a paradigm?" 
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+           course(CS173).
+           course(CS374).
+           course(CS374).
+           course(CS475).
+           
+           prereq(CS174, CS173).
+           prereq(CS374, CS174).
+           
+           ?-prereq(CS475, CS374). % no
+           
+           /* Horn Clause: does there exist a Z such that Y is a prereq of Z AND that X must be taken before Z? */
+           take_before(X, Y) :- prereq(Z, Y), take_before(X, Z). % Transitive closure through recursion
+           
+           ?-take_before(CS173, CS374). % yes
+        ]]></script> 
+      title: "Declarative Languages - Logic"
+      questions:
+        - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
+        - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?"  
         
 tags:
   - paradigms
