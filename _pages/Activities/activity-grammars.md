@@ -27,11 +27,11 @@ info:
         <table class="tg">
         <thead>
           <tr>
-            <th class="tg-7btt"><span style="background-color:#EAECF0">Grammar</span></th>
-            <th class="tg-7btt"><span style="background-color:#EAECF0">Languages</span></th>
-            <th class="tg-7btt"><span style="background-color:#EAECF0">Automaton</span></th>
-            <th class="tg-7btt"><span style="background-color:#EAECF0">Production rules (constraints)*</span></th>
-            <th class="tg-7btt"><span style="background-color:#EAECF0"><a href="https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf">Examples</a></span></th>
+            <th class="tg-7btt"><span>Grammar</span></th>
+            <th class="tg-7btt"><span>Languages</span></th>
+            <th class="tg-7btt"><span>Automaton</span></th>
+            <th class="tg-7btt"><span>Production rules (constraints)*</span></th>
+            <th class="tg-7btt"><span><a href="https://www.cs.ru.nl/~herman/onderwijs/2016TnA/lecture7.pdf">Examples</a></span></th>
           </tr>
         </thead>
         <tbody>
