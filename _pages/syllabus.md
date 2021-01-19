@@ -376,6 +376,8 @@ schedule:
   readings:
   - rtitle: "PLC Ch. 5"
     rlink: false  
+  - rtitle: "Lambda Calculus"
+    rlink: "https://plato.stanford.edu/entries/lambda-calculus/"
 - week: "9"
   date: "1"
   title: "Memory Management"  

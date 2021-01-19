@@ -7,6 +7,8 @@ excerpt: "CS374: Programming Language Principles - Binding and Scope"
 info: 
   goals: 
     - To define the various ways that names can be bound to items such as variables
+    - To explain interpreter or compiler binding of types
+    - To differentiate between strongly and weakly typed languages
     - To define variable scope
     - To relate scope to a function call stack
   models:
@@ -87,7 +89,53 @@ info:
         - "What kind of data structure would enable a dynamic number of bound variables in a routine?"
         - "What revisions are needed to support additional data types?"
         - "What revisions are needed to support scope, so that variables of the same name can exist in subroutines?"
-      
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        int max(int a, int b) {
+            if(a < b) {
+                return b;
+            } else {
+                return a;
+            }        
+        }
+        
+        float max(float a, float b) {
+            if(a < b) {
+                return b;
+            } else {
+                return a;
+            }
+        }
+        ]]></script> 
+      title: Binding Functions
+      questions:
+        - "How can polymorphism work in a statically bound language?  How might this differ from a dynamically bound language?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        /* From https://en.wikipedia.org/wiki/Virtual_function */
+        class Animal {
+         public:
+          // Intentionally not virtual:
+          void Move(void) {
+            std::cout << "This animal moves in some way" << std::endl;
+          }
+          virtual void Eat(void) = 0;
+        };
+
+        // The class "Animal" may possess a definition for Eat if desired.
+        class Llama : public Animal {
+         public:
+          // The non virtual function Move is inherited but not overridden.
+          void Eat(void) override {
+            std::cout << "Llamas eat grass!" << std::endl;
+          }
+        };        
+        ]]></script> 
+      title: Virtual Inheritance
+      questions:
+        - "A call to <code>x->Eat()</code>, where <code>x</code> is of type <code>Animal</code> but refers to a <code>Llama</code>, would output what?"
+        - "How would this differ if <code>Eat</code> was not virtual, and implemented in the class <code>Animal</code>?"
+        
 tags:
   - binding
   - scope

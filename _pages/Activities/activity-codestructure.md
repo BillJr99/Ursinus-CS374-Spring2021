@@ -10,7 +10,7 @@ info:
     - To explain the programming language constructs of conditionals
     - To explain the programming language constructs of functions
     - To explain the programming language constructs of exceptions
-    - To relate the Lambda calculus to the Turing Machine abstraction
+    - To relate complex data structures to their position in memory and pointer- or reference-based representation in memory
   models:
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
