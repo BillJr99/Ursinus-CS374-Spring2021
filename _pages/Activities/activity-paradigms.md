@@ -33,8 +33,8 @@ info:
         - What, in general, does a statement realy do?
         - At what points do the value of root change?
         - "What would happen if <code>a</code> is 0?"
-        - How can we represent this program using an Object-Oriented style?  What state might the object represent?  
-        - Sketch out an object-oriented design representing students and courses, in which students are enrolled in one or more sections of the course.
+        - "How can we represent this program using an Object-Oriented style?  What state might the object represent?"
+        - "Sketch out an object-oriented design representing students and courses, in which students are enrolled in one or more sections of the course."
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         #include <math.h>
