@@ -17,6 +17,8 @@ info:
         void foo() {
             int x = 10;
             
+            // float x = 10.0; // what would happen here?
+            
             x = x * 2;
         }
         
@@ -33,6 +35,7 @@ info:
         - "Can <code>foo</code> be re-assigned at runtime?  Would you say that it is statically or dynamically bound to its value?  How about <code>x</code>?"
         - "Do you think this is true of every language?"
         - "How many bindings are there of the identifier <code>x</code>?  If <code>x</code> is staically bound, it must be resolved by the compiler at compile time.  How is the correct value obtained at each reference?" 
+        - "What would happen if <code>x</code> is re-declared in <code>foo</code> after it has already been declared in languages like C and Java that specify and insist on proper types (these are called strongly typed languages)?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         struct symbol {

@@ -64,8 +64,11 @@ info:
         - "What are some weakly typed languages?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        #include <stdlib.h>
+        
         int main(void) {
             int x = 1/3;
+            int* y = (int*) malloc(sizeof(int));
         }
         ]]></script> 
       title: "Strongly Typed Languages"
@@ -73,6 +76,7 @@ info:
         - "What is the type of <code>x</code>?  What is its value, and why?  How can we correct this to obtain the value we want?"
         - "Given that other languages would compute 1/3 to 0.33333..., how would you define the concept of type coercion?"
         - "What are some strongly typed languages?"
+        - "What is the purpose of the <code>(int*)</code> clause in the <code>malloc</code> statement?  What does <code>malloc</code> actually return, and why?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         /* From: https://en.wikipedia.org/wiki/Operator_overloading */
