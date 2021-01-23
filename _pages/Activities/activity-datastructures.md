@@ -115,7 +115,7 @@ info:
         <code>mul(3, 2) = &lambda;xyz.x(yz) 3 2 = &lambda;z.3(2z) = 6</code><br>
         </div>
       title: "Arithmetic with the Lambda Calculus"
-      quetions:
+      questions:
         - "How might you define addition using the successor function?"      
   additional_reading:
     - title: "Lambda Calculus"
