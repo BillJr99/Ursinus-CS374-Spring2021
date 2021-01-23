@@ -265,9 +265,9 @@ info:
       questions:
         - "How would you revise this to support the corrected LL(1) grammar?"
     - model: |
-      <div align="left">
+        <div align="left">
         xxx
-      </div>
+        </div>
       title: "Generating an LR(0) Parse Table"
       questions: 
         - "Draw the state machine (the states and transitions) implemented by this LR(0) parse table."
