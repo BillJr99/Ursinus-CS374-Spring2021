@@ -265,6 +265,14 @@ info:
       questions:
         - "How would you revise this to support the corrected LL(1) grammar?"
     - model: |
+      <div align="left">
+        xxx
+      </div>
+      title: Generating an LR(0) Parse Table
+      questions: 
+        - "Draw the state machine (the states and transitions) implemented by this LR(0) parse table."
+        - "Augment the grammar and generate an LR(0) parse table for the grammar <code>S -> XX; X -> xXy; X -> x; X -> y</code>"        
+    - model: |
         <a href="https://en.wikipedia.org/wiki/LR_parser#Bottom-up_parse_steps_for_example_A*2_+_1"><img alt="Wikipedia" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Shift-Reduce_Parse_Steps_for_A%2A2%2B1.svg/512px-Shift-Reduce_Parse_Steps_for_A%2A2%2B1.svg.png"></a>
         <br>
         <!-- From https://en.wikipedia.org/wiki/LR_parser -->
