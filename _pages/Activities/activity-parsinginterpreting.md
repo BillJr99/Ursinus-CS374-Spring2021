@@ -266,6 +266,7 @@ info:
         - "How would you revise this to support the corrected LL(1) grammar?"
     - model: |
         <div align="left">
+        Begin with a grammar definition:
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
          /* 
             S -> Xyx
@@ -304,7 +305,7 @@ info:
         <li>States 2 and 3 have additional outputs, so we proceed until the dot is all the way to the right.  State 5: State 2 -> State 5 on reading y<br><code>S -> Xy.x</code></li>
         <li>State 6: State 3 -> State 6 on reading X<br><code>X -> xX.</code></li>
         <li>State 3 -> State 3 on reading x.  Notice the productions in the closure are the same as in state 3.<br><code>X -> x.X; X -> .xX | .y</code></li>
-        <li>Similarly, State 3 -> State 4 on reading y<br><code></code></li>
+        <li>Similarly, State 3 -> State 4 on reading y</li>
         <li>Now, state 5 can continue - State 7: State 5 -> State 7 on reading x<br><code>S -> Xyx.</code></li>
         </ul>
         <br>
