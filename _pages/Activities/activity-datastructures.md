@@ -72,7 +72,7 @@ info:
         <div>
         <code>not x = &lambda;x.x false true</code><br>
         <code>not x = (&lambda;x.x false true) true</code><br>
-        These expansions are called <strong>currying</code>.  Now, substitute <code>true</code> for <code>x</code:<br>
+        These expansions are called <strong>currying</strong>.  Now, substitute <code>true</code> for <code>x</code:<br>
         <code>not x = (true false true)</code><br>
         Substitute <code>&lambda;xy.x</code> for <code>true</code>:<br>
         <code>not x = (&lambda;xy.x false true)</code><br>
