@@ -268,7 +268,7 @@ info:
       <div align="left">
         xxx
       </div>
-      title: Generating an LR(0) Parse Table
+      title: "Generating an LR(0) Parse Table"
       questions: 
         - "Draw the state machine (the states and transitions) implemented by this LR(0) parse table."
         - "Augment the grammar and generate an LR(0) parse table for the grammar <code>S -> XX; X -> xXy; X -> x; X -> y</code>"        
