@@ -79,6 +79,7 @@ info:
         Given two parameters, select the first one, where the parameters are <code>x = true</code>, <code>y = false</code>:
         <code>not true = false</code>
         </div>
+        <div>
         <code>equals(x, y) = &lambda;xy.???</code><br>
         Apply one of the parameters to see if it expands to <code>true</code> or <code>false</code>:<br>
         <code>equals(x, y) = &lambda;xy.x ???</code><br>
