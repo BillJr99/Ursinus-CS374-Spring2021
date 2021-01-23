@@ -8,7 +8,7 @@ info:
   goals: 
     - To explain data types from a record perspective
     - To explain data types from a tuple perspective
-    - To relate the Lambda calculus to the Turing Machine abstraction
+    - To relate the Lambda calculus to the Turing Machine abstraction, and to describe their equivalence
   models:
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
