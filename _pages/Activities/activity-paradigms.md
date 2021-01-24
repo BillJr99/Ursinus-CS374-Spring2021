@@ -363,7 +363,7 @@ info:
       questions:
         - "What do you think <code>$1</code> means?"
         - "If <code>$1</code> is 5, what is the final value of <code>x</code>?"
-        - "Why was the <code>\</code> character necessary in the <code>x=$(expr $1 \* 2)</code> command?"
+        - "Why was the <code>&#92;</code> character necessary in the <code>x=$(expr $1 &#92;* 2)</code> command?"
         - "What do each of the variable expansions do in the first example above?"
         - "What would happen if the <code>-lt</code> in the loop above was modified to <code>&lt;</code>?  Similarly, what is the difference between <code>-eq</code> and <code>=</code> in bash?"        
   additional_reading:
