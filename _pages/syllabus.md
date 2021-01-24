@@ -381,9 +381,10 @@ schedule:
     rlink: false  
 - week: "9"
   date: "1"
-  title: "Data Structures and the Lambda Calculus"
+  title: "The Lambda Calculus"
+  link: "./Activities/LambdaCalculus"
   readings:
-  - rtitle: "Lambda Calculus"
+  - rtitle: "Introduction to the Lambda Calculus"
     rlink: "https://plato.stanford.edu/entries/lambda-calculus/"  
 - week: "9"
   date: "2"
