@@ -271,22 +271,6 @@ info:
         - "Describe, in your own words, what this program does."  
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
-         #!/bin/bash
-         
-         COURSE=CS374
-         cd ${COURSE}
-         
-         FILES=$(ls *.txt)
-         echo ${FILES}
-        ]]></script> 
-      title: "Scripting Languages - Bash"
-      questions:
-        - "What is a statement in this language?"
-        - "How are variables expanded?"
-        - "What potential benefit can you see with the use of shell scripting?" 
-        - "Are scripting languages imperative or declarative?"
-    - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         heights = [50, 62, 73, 58, 46, 49, 43]
         minheight = 48
         canride = []
