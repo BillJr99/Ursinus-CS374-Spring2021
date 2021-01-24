@@ -35,7 +35,7 @@ info:
         - "What would happen if <code>a</code> is 0?"
         - "How can we represent this program using an Object-Oriented style?  What state might the object represent?"
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[  
+        <script type="syntaxhighlighter" class="brush: java"><![CDATA[  
         import java.util.Random;
         
         public abstract class Vehicle {
@@ -202,7 +202,7 @@ info:
         - "How does the <code>calcroot</code> function know to use the <code>discriminant</code> variable in its local function?"
         - "What would happen if <code>discriminant</code> was modified inside <code>calcroot</code>?  Why is this different than for the <code>root</code> variable?"
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
         (define L (list 'a 'b 'c))
         (car L)
         (cdr L)
@@ -214,7 +214,7 @@ info:
         (add 3 2)
         ]]></script>
         <br>
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
         (define square
           (lambda(n)
             (* n n)
@@ -238,7 +238,7 @@ info:
         - "What shared variables exist in this program?"
         - "What are some potential advantages of Functional Programming as a paradigm?" 
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: swipl"><![CDATA[
            course(CS173).
            course(CS374).
            course(CS374).
@@ -259,7 +259,7 @@ info:
         - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
         - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?"  
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: swipl"><![CDATA[
          % From https://en.wikipedia.org/wiki/Prolog
          perfect(N) :-
             between(1, inf, N), U is N // 2,
@@ -270,7 +270,7 @@ info:
       questions:
         - "Describe, in your own words, what this program does."  
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: python"><![CDATA[
         heights = [50, 62, 73, 58, 46, 49, 43]
         minheight = 48
         canride = []
@@ -293,7 +293,7 @@ info:
         - "What are the advantages and disadvantages of each approach?"         
         - "Which version do you find more convenient and why?"   
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: bash"><![CDATA[
          #!/bin/bash
          
          COURSE=CS374
@@ -309,7 +309,7 @@ info:
         - "What potential benefit can you see with the use of shell scripting?" 
         - "Are scripting languages imperative or declarative?" 
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: bash"><![CDATA[
          #!/bin/bash
          
          let "x = $1 * 2" # equivalent to x=$(expr $1 \* 2) and x=$(($1 * 2))
@@ -328,7 +328,7 @@ info:
          echo How about now: ${NAME2}
         ]]></script> 
         <br>
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: bash"><![CDATA[
          #!/bin/bash
          
          x=0
