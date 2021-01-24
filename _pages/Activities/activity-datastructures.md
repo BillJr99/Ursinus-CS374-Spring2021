@@ -114,11 +114,22 @@ info:
         <code>successor(n) = &lambda;wyx.y(wyx) (n)</code><br>
         <code>successor(0) = &lambda;wyx.y(wyx) (0) = &lambda;wyx.y(wyx) (&lambda;nz.z) = &lambda;nz.n(z) = 1</code><br>
         <code>mul(x, y) = &lambda;xyz.x(yz)</code><br>
-        <code>mul(3, 2) = &lambda;xyz.x(yz) 3 2 = &lambda;z.3(2z) = 6</code><br>
+        <code>mul(3, 2) = &lambda;xyz.x(yz) 3 2 = &lambda;z.3(2z) = 6</code>
         </div>
       title: "Arithmetic with the Lambda Calculus"
       questions:
-        - "How might you define addition using the successor function?"      
+        - "How might you define addition using the successor function?"  
+    - model: |
+        <div align="left">
+        <code>Y = &lambda;f.(&lambda;x.f(x x)) (&lambda;x.f(x x))</code><br>
+        <code>Y g = &lambda;f.(&lambda;x.f(x x)) (&lambda;x.f(x x)) g</code><br>
+        <code>Y g = (&lambda;x.g(x x)) (&lambda;x.g(x x))</code><br>
+        <code>Y g = g ((&lambda;x.g(x x)) (&lambda;x.g(x x)))</code><br>
+        <code>Y g = g (Y g)</code>
+        </div>
+      title: "Recursion and the Y Combinator"
+      questions:
+        - "How can this model be extended to support recursive procedures?"          
   additional_reading:
     - title: "Lambda Calculus"
       link: "https://plato.stanford.edu/entries/lambda-calculus/"
