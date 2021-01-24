@@ -10,7 +10,7 @@ info:
     - To explore concurrency within programming paradigms
   models:
     - model: |
-        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: java"><![CDATA[
         public class Main {
             public static void main(String[] args) {
                 int a = 1, b = 2, c = 1;
