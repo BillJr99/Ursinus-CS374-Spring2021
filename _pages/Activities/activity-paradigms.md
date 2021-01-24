@@ -238,7 +238,7 @@ info:
         - "What shared variables exist in this program?"
         - "What are some potential advantages of Functional Programming as a paradigm?" 
     - model: |
-        <script type="syntaxhighlighter" class="brush: swipl"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
            course(CS374).
            course(CS374).
@@ -259,7 +259,7 @@ info:
         - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
         - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?"  
     - model: |
-        <script type="syntaxhighlighter" class="brush: swipl"><![CDATA[
+        <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
          % From https://en.wikipedia.org/wiki/Prolog
          perfect(N) :-
             between(1, inf, N), U is N // 2,
