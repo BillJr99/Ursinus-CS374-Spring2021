@@ -291,7 +291,23 @@ info:
       title: "Applications of the Declarative Paradigm - Pythonic List Comprehension"
       questions:
         - "What are the advantages and disadvantages of each approach?"         
-        - "Which version do you find more convenient and why?"         
+        - "Which version do you find more convenient and why?"   
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         #!/bin/bash
+         
+         COURSE=CS374
+         cd ${COURSE}
+         
+         FILES=$(ls *.txt)
+         echo ${FILES}
+        ]]></script> 
+      title: "Scripting Languages - Bash"
+      questions:
+        - "What is a statement in this language?"
+        - "How are variables expanded?"
+        - "What potential benefit can you see with the use of shell scripting?" 
+        - "Are scripting languages imperative or declarative?"        
   additional_reading:
     - title: "Concise Introduction to Prolog"
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
