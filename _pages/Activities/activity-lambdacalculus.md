@@ -1,6 +1,6 @@
 ---
 layout: activity
-permalink: /Activities/Lambda Calculus
+permalink: /Activities/LambdaCalculus
 title: "CS374: Programming Language Principles - The Lambda Calculus"
 excerpt: "CS374: Programming Language Principles - The Lambda Calculus"
 

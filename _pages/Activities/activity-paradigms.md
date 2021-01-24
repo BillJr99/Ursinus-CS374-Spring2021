@@ -276,14 +276,73 @@ info:
          COURSE=CS374
          cd ${COURSE}
          
-         FILES=$(ls)
+         FILES=$(ls *.txt)
          echo ${FILES}
         ]]></script> 
-      title: "Declarative Languages - Scripting"
+      title: "Scripting Languages - Bash"
       questions:
         - "What is a statement in this language?"
         - "How are variables expanded?"
         - "What potential benefit can you see with the use of shell scripting?" 
+        - "Are scripting languages imperative or declarative?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         #!/bin/bash
+         
+         let "x = $1 * 2" # equivalent to x=$(expr $1 \* 2) and x=$(($1 * 2))
+         let x++
+         
+         NAME="Alexandra"
+         echo ${NAME} has ${#NAME} characters in it
+         echo ${NAME} goes by ${NAME:0:4} for short.
+         echo ${NAME%a*} ${NAME%%a*} # the # sign instead of % in the variable expansion 
+                                     # does this behavior from the left instead of the right    
+
+         echo ${NAME/xandra/jandro}
+                                     
+         echo Here is a name that doesn't exist yet: ${NAME2}
+         echo Here is the value of another variable: ${NAME2:=Unknown} 
+         echo How about now: ${NAME2}
+        ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
+         #!/bin/bash
+         
+         x=0
+         while [[ ${x} -lt 10 ]] # (( ${x} < 10 )) is also acceptable
+         do
+                 echo ${x}
+                 x=$((${x} + 1))
+         done
+         
+         if [[ ${x} -eq 10 ]] # (( ${x} == 10 )) is also acceptable
+         then
+            echo "x is now 10"
+         else
+            echo "x is not 10 but rather ${x}"
+         fi
+         
+         if [[ -e 'doit.sh' ]]
+         then
+            echo "doit.sh exists"
+         else
+            echo "doit.sh does not exist"
+         fi
+
+         if [[ -d 'doit.sh' ]]
+         then
+            echo "doit.sh is a directory"
+         else
+            echo "doit.sh is not a directory"
+         fi         
+        ]]></script>         
+      title: "Programming Constructs in bash"
+      questions:
+        - "What do you think <code>$1</code> means?"
+        - "If <code>$1</code> is 5, what is the final value of <code>x</code>?"
+        - "Why was the <code>\</code> character necessary in the <code>x=$(expr $1 \* 2)</code> command?"
+        - "What do each of the variable expansions do in the first example above?"
+        - "What would happen if the <code>-lt</code> in the loop above was modified to <code>&lt;</code>?  Similarly, what is the difference between <code>-eq</code> and <code>=</code> in bash?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
         heights = [50, 62, 73, 58, 46, 49, 43]
