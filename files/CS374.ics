@@ -475,7 +475,7 @@ DTSTAMP:20210324T000000Z
 DTSTART;VALUE=DATE:20210324
 SUMMARY:CS374 Principles of Programming Languages: Class Meeting
 LOCATION:
-DESCRIPTION:\nReading: Lambda Calculus https://plato.stanford.edu/entries/lambda-calculus/
+DESCRIPTION:https://www.billmongan.com/Ursinus-CS374-Fall2021/./Activities/LambdaCalculus\nReading: Introduction to the Lambda Calculus https://plato.stanford.edu/entries/lambda-calculus/
 PRIORITY:3
 END:VEVENT
 BEGIN:VEVENT
