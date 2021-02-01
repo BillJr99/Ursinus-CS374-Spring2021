@@ -254,15 +254,16 @@ schedule:
   - rtitle: "PLC Ch. 8"
     rlink: false   
   deliverables:
-  - dtitle: "Lab: Shell Due"
-    dlink: "./Labs/Shell"
-    points: 100  
   - dtitle: "Programming Assignment: Functional Programming Handed Out"
     dlink: "./Assignments/Functional"
     points: 100       
 - week: "3"
   date: "0"
   title: "Scripting Languages" 
+  deliverables:
+  - dtitle: "Lab: Shell Due"
+    dlink: "./Labs/Shell"
+    points: 100    
   readings:
   - rtitle: "Bash Scripting Tutorial"
     rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
