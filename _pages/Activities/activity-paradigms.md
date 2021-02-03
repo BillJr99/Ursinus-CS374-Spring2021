@@ -37,27 +37,31 @@ info:
     - model: |
         <script type="syntaxhighlighter" class="brush: c"><![CDATA[
         #include <string.h>
-        
+        #include <stdlib.h>
+        #include <stdio.h>
+
         struct Person {
             char* name;
             int age;
-            double salary;
+            float salary;
         };
-        
+
         void tax(struct Person* p) {
             if(p->salary > 100000) {
-                p->salary *= 0.85;
+                p->salary = p->salary * 0.85;
             } else {
-               p->salary *= 0.95;
+                p->salary = p->salary * 0.95;
             }
         }
-        
+
         int main(void) {
             struct Person* bill = (struct Person*) malloc(sizeof(struct Person));
             bill->name = (char*) malloc(strlen("Bill")+1);
+            strncpy(bill->name, "Bill", strlen("Bill")+1);
             bill->age = 38;
             bill->salary = 20000;
             tax(bill);
+            printf("%s (%d): %f\n", bill->name, bill->age, bill->salary);
             free(bill);
         }
         ]]></script> 
