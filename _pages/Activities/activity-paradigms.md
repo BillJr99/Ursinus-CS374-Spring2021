@@ -406,16 +406,16 @@ info:
     - model: |
         <div align="left">
         <h3>Concurrency in the Go Language</h3>
-        <iframe src="https://tour.golang.org/concurrency/2" title="Concurrency in the Go Language"></iframe>
+        <iframe src="https://tour.golang.org/concurrency/2" title="Concurrency in the Go Language" width="90%" height="600"></iframe>
         <br>
         <h3>Non-Blocking Concurrency Channels in the Go Language</h3>
-        <iframe src="https://gobyexample.com/non-blocking-channel-operations" title="W3Schools Free Online Web Tutorials"></iframe>
+        <iframe src="https://gobyexample.com/non-blocking-channel-operations" title="Non-Blocking Concurrency with Channels in the Go Language" width="90%" height="600"></iframe>
         <br>
-        <iframe src="https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/" title="Socket Programming in the Go Language"></iframe>
+        <iframe src="https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/" title="Socket Programming in the Go Language" width="90%" height="600"></iframe>
         </div>
       title: "Concurrent and Socket Programming in the Go Language"
       questions: 
-        - "xxx"        
+        - "How might you add concurrency to a socket program to allow the program to send data without having to wait to receive a message?"        
   additional_reading:
     - title: "Concise Introduction to Prolog"
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
