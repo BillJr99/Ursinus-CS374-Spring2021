@@ -8,7 +8,7 @@ info:
   goals: 
     - To define the imperative, declarative (functional and logic), object-oriented, and scripting programming paradigms
     - To explore concurrency within programming paradigms
-  models:
+  models: 
     - model: |
         <script type="syntaxhighlighter" class="brush: java"><![CDATA[
         public class Main {
@@ -34,6 +34,39 @@ info:
         - "At what points do the value of root change?"
         - "What would happen if <code>a</code> is 0?"
         - "How can we represent this program using an Object-Oriented style?  What state might the object represent?"
+    - model: |
+        <script type="syntaxhighlighter" class="brush: c"><![CDATA[
+        #include <string.h>
+        
+        struct Person {
+            char* name;
+            int age;
+            double salary;
+        };
+        
+        void tax(struct Person* p) {
+            if(p->salary > 100000) {
+                p->salary *= 0.85;
+            } else {
+               p->salary *= 0.95;
+            }
+        }
+        
+        int main(void) {
+            struct Person* bill = (struct Person*) malloc(sizeof(struct Person));
+            bill->name = (char*) malloc(strlen("Bill")+1);
+            bill->age = 38;
+            bill->salary = 20000;
+            tax(bill);
+            free(bill);
+        }
+        ]]></script> 
+      title: "The C Programming Language and Memory Management"
+      questions:
+        - "What is the value of <code>bill->salary</code> after the call to <code>tax()</code>?"        
+        - "The above program has a memory leak.  Which variable should also be freed?"
+        - "Why is there a <code>+1</code> in the <code>malloc</code> call on <code>bill->name</code>?"
+        - "Suppose we had set <code>p</code> equal to a newly <code>malloc</code>'ed person in <code>tax</code>.  How would this affect <code>bill</code>?"
     - model: |
         <script type="syntaxhighlighter" class="brush: java"><![CDATA[  
         import java.util.Random;
@@ -161,7 +194,6 @@ info:
                System.out.println("Is the Motor Home bed made? " + m.isBedMade());
              }
         }
-
         ]]></script>    
       title: "The Object-Oriented Paradigm"
       questions:
@@ -257,7 +289,8 @@ info:
       title: "Declarative Languages - Logic"
       questions:
         - "What query would result in a <code>yes</code> response according to the prerequisite rules above?" 
-        - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?"  
+        - "In your own words, what does the <code>take_before</code> clause specify, and how does it do so?" 
+        - "Write a <a href=\"https://en.wikipedia.org/wiki/Horn_clause#Definition\">Horn Clause</a> that specifies that one might go outside if it is warm and not raining outside."
     - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
          % From https://en.wikipedia.org/wiki/Prolog
