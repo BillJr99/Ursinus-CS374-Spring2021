@@ -398,7 +398,20 @@ info:
         - "If <code>$1</code> is 5, what is the final value of <code>x</code>?"
         - "Why was the <code>&#92;</code> character necessary in the <code>x=$(expr $1 &#92;* 2)</code> command?"
         - "What do each of the variable expansions do in the first example above?"
-        - "What would happen if the <code>-lt</code> in the loop above was modified to <code>&lt;</code>?  Similarly, what is the difference between <code>-eq</code> and <code>=</code> in bash?"        
+        - "What would happen if the <code>-lt</code> in the loop above was modified to <code>&lt;</code>?  Similarly, what is the difference between <code>-eq</code> and <code>=</code> in bash?"   
+    - model: |
+        <div align="left">
+        <h3>Concurrency in the Go Language</h3>
+        <iframe src="https://tour.golang.org/concurrency/2" title="Concurrency in the Go Language"></iframe>
+        <br>
+        <h3>Non-Blocking Concurrency Channels in the Go Language</h3>
+        <iframe src="https://gobyexample.com/non-blocking-channel-operations" title="W3Schools Free Online Web Tutorials"></iframe>
+        <br>
+        <iframe src="https://www.thepolyglotdeveloper.com/2017/05/network-sockets-with-the-go-programming-language/" title="Socket Programming in the Go Language"></iframe>
+        </div>
+      title: "Concurrent and Socket Programming in the Go Language"
+      questions: 
+        - "xxx"        
   additional_reading:
     - title: "Concise Introduction to Prolog"
       link: "https://www.cis.upenn.edu/~matuszek/Concise%20Guides/Concise%20Prolog.html"
