@@ -39,9 +39,9 @@ The purpose of this assignment is to write a shell script to help automate a tas
 ## Part 1: Creating an MD5 Dictionary
 Open your shell and execute the following command:
 
-`find . -type 'f' -exec md5sum {} \;`
+`find . -type 'f' -exec md5sum {} \; 2>/dev/null`
 
-This command searches for all files (per the `-type 'f'` clause) under your current working directory and recursively into all subdirectories.  It also executes a command on each file: specifically, it computes an MD5 hash on the contents of each file.  This hash changes if the contents of the file changes.  The format of each line is:
+This command searches for all files (per the `-type 'f'` clause) under your current working directory and recursively into all subdirectories.  It also executes a command on each file: specifically, it computes an MD5 hash on the contents of each file.  The `2>/dev/null` causes all error messages (like file permissions failures) to be suppressed, so you'll only get meaningful output for the files that you can read.  The computed MD5 hash changes if the contents of the file changes.  The format of each line is:
 
 ```
 <md5 hash><space><space><file path>\n
@@ -53,7 +53,32 @@ Use the `cut` or `awk` command to read the hash and the file path into two separ
 <file path><space><md5 hash>\n
 ```
 
-Let's call this file `md5dict.txt`.  Arrange this into a shell script and test it.
+You can append two commands together using the pipe character: for example, the command below lists all files in your directory, and pipes the output to the sort command, which sorts the output alphabetically:
+
+```
+ls | sort
+```
+
+You can also append `> output` to the end of a command to write its output to a file called `output` (or any file name you choose).  Let's output to a file called `md5dict.txt`.  
+
+To use the `cut` command, you can do the following:
+
+`echo test,tube | cut -f2 -d','`
+
+which obtains the second field (`tube`) from the line of text, using the delimiter `,`.  
+
+Arrange your command(s) to compute the MD5 hash into a shell script and test it.  Write the following line as the first line of your script file, so that your computer knows it is a `bash` script:
+
+```
+#!/bin/bash
+```
+
+and, before you execute it, run this to make the file executable (I'll use the filename `myscript.sh` as an example, but you can call your file whatever you'd like!):
+
+```
+chmod a+x myscript.sh
+./myscript.sh
+```
 
 ## Part 2: Checking for Changes
 
