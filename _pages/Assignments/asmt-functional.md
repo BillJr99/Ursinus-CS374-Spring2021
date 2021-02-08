@@ -47,6 +47,10 @@ If you have not already, install scheme on your computer.  If you can type `sche
 
 Alternatively, you can use a web-based IDE such as [repl.it](https://repl.it).
 
+When you run `scheme`, you'll be presented with an interpreter where you can write or paste code directly, or use the following command to load a file (here, called `myfile.scm`, from your current directory (from which you started scheme):
+
+`(load "myfile.scm")`
+
 ## Part 1: Warmup with Lambda Procedures
 
 Using `lambda`, define a procedure that computes a value on a line according to the classic formula:
