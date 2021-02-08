@@ -318,14 +318,22 @@ info:
         )
 
         (plusminus 6 2)
-        ]]></script>          
+        ]]></script> 
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define L1 '(1 2 3))
+        (define L2 '(4 5 6))
+        (define L3 (map - L1 L2))
+        (apply + L3)
+        ]]></script>        
       title: "The Scheme Programming Language"
       questions: 
         - "How are function parameters handled in Scheme?  Are they passed by value or by reference?"        
         - "What is a function in Scheme?  How is it represented?"
         - "What does <code>czr</code> do in your own words?"
         - "Write a function to count the number of items in a list using a recursive call and a base case, using <code>czr</code> as a guide to traversing a list."
-        - "Diagram the binding of the values in the call to <code>plusminus</code>."
+        - "Diagram the binding of the values in the call to <code>plusminus</code> to the anonymous lambda function."
+        - "What is the result of the <code>map</code>/<code>apply</code> sequence?  What would happen if <code>map</code> were applied to only a single list?"
     - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
