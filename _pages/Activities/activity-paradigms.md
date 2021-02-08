@@ -274,6 +274,59 @@ info:
         - "What shared variables exist in this program?"
         - "What are some potential advantages of Functional Programming as a paradigm?" 
     - model: |
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define y
+          (lambda(m x b)
+            (+ (* x m) b)))
+            
+        (y 5 6 7)
+        ]]></script>
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define v0 3)
+        (define t 5)
+        (define a 9.80665)
+
+        (define square
+          (lambda(n)
+            (* n n)))
+            
+        (+ (* v0 t) (* 0.5 (* a (* t t))))
+
+        (+ (* v0 t) (* 0.5 (* a (square t))))
+        ]]></script>     
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define czr
+          (lambda(l)
+            (if (null? (cdr l))
+              (car l)
+              (czr (cdr l))
+            )
+          )
+        )
+        ]]></script>  
+        <br>
+        <script type="syntaxhighlighter" class="brush: scheme"><![CDATA[
+        (define plusminus 
+          (lambda(a b)
+            (
+              (lambda (x y) (list (+ x y) (- x y)))
+              a b
+            )
+          )
+        )
+
+        (plusminus 6 2)
+        ]]></script>          
+      title: "The Scheme Programming Language"
+      questions: 
+        - "How are function parameters handled in Scheme?  Are they passed by value or by reference?"        
+        - "What is a function in Scheme?  How is it represented?"
+        - "What does <code>czr</code> do in your own words?"
+        - "Write a function to count the number of items in a list using a recursive call and a base case, using <code>czr</code> as a guide to traversing a list."
+        - "Diagram the binding of the values in the call to <code>plusminus</code>."
+    - model: |
         <script type="syntaxhighlighter" class="brush: prolog"><![CDATA[
            course(CS173).
            course(CS374).
@@ -425,6 +478,8 @@ info:
       link: "https://tiswww.case.edu/php/chet/bash/bashref.html"
     - title: "Bash Scripting Tutorial"
       link: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners" 
+    - title: "MapReduce"
+      link: "https://web.archive.org/web/20150226152956/http://jsmapreduce.com/"
     
 tags:
   - paradigms
