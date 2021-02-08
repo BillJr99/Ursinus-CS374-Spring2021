@@ -249,6 +249,15 @@ schedule:
   title: "Functional Programming" 
 - week: "2"
   date: "2"
+  title: "Functional Programming"  
+- week: "3"
+  date: "0"
+  title: "Functional Programming" 
+- week: "3"
+  date: "1"
+  title: "Functional Programming"    
+- week: "3"
+  date: "2"
   title: "Logic Programming"  
   readings:
   - rtitle: "PLC Ch. 8"
@@ -257,7 +266,7 @@ schedule:
   - dtitle: "Programming Assignment: Functional Programming Handed Out"
     dlink: "./Assignments/Functional"
     points: 100       
-- week: "3"
+- week: "4"
   date: "0"
   title: "Scripting Languages" 
   deliverables:
@@ -267,57 +276,48 @@ schedule:
   readings:
   - rtitle: "Bash Scripting Tutorial"
     rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
-- week: "3"
+- week: "4"
   date: "1"
   title: "Scripting Languages" 
-- week: "3"
+- week: "4"
   date: "2"
   title: "Syntax and Semantics"
   link: "./Activities/Syntax"
   readings:
   - rtitle: "PLC Ch. 2"
-    rlink: false   
-- week: "4"
-  date: "0"
-  title: "Bindng and Scope" 
-  link: "./Activities/BindingScope"  
-- week: "4"
-  date: "1"
-  title: "Binding and Scope"  
-- week: "4"
-  date: "2"
-  title: "Binding and Scope"
+    rlink: false  
   deliverables:
   - dtitle: "Programming Assignment: Functional Programming Due"
     dlink: "./Assignments/Functional"
     points: 100     
   - dtitle: "Programming Assignment: Shell Scripting Handed Out"
     dlink: "./Assignments/Scripting"
-    points: 100      
+    points: 100     
 - week: "5"
   date: "0"
+  title: "Bindng and Scope" 
+  link: "./Activities/BindingScope"  
+- week: "5"
+  date: "1"
+  title: "Binding and Scope"
+  deliverables:
+  - dtitle: "Midterm Exam: Midterm Handed Out"
+    dlink: false
+    points: 100   
+- week: "5"
+  date: "2"
   title: "Regular Expressions"
   link: "./Activities/Regex"
   readings:
   - rtitle: "Compilers Ch. 3.3"
     rlink: false    
-- week: "5"
-  date: "1"
-  title: "Regular Expressions" 
-  deliverables:
-  - dtitle: "Midterm Exam: Midterm Handed Out"
-    dlink: false
-    points: 100  
-- week: "5"
-  date: "2"
-  title: "Finite Automata" 
-  link: "./Activities/Automata"
-  readings:
-  - rtitle: "Compilers Ch. 3.4-3.6"
-    rlink: false     
 - week: "6"
   date: "0"
   title: "Finite Automata"  
+  link: "./Activities/Automata"
+  readings:
+  - rtitle: "Compilers Ch. 3.4-3.6"
+    rlink: false      
   deliverables:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
