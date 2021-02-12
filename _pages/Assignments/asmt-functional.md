@@ -43,7 +43,7 @@ The purpose of this assignment is to explore the functional programming paradigm
 
 If you have not already, install scheme on your computer.  If you can type `scheme` and hit Enter, and see Scheme load, you are ready to proceed.  If you need to install Scheme on Ubuntu, you can execute this command:
 
-`sudo apt install mit-scheme`
+`sudo apt update && sudo apt install mit-scheme`
 
 Alternatively, you can use a web-based IDE such as [repl.it](https://repl.it).
 
