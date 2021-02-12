@@ -372,7 +372,6 @@ info:
         heights = [50, 62, 73, 58, 46, 49, 43]
         minheight = 48
         canride = []
-        canride2 = []
         
         # version 1
         for height in heights:
