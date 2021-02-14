@@ -487,7 +487,9 @@ info:
       link: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners" 
     - title: "MapReduce"
       link: "https://web.archive.org/web/20150226152956/http://jsmapreduce.com/"
-    
+    - title: "Closures in Scheme"
+      link: "https://www.artificialworlds.net/presentations/scheme-03-closures/scheme-03-closures.html"
+      
 tags:
   - paradigms
   
