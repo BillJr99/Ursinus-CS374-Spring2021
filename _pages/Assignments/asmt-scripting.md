@@ -59,7 +59,7 @@ You can append two commands together using the pipe character: for example, the 
 ls | sort
 ```
 
-You can also append `> output` to the end of a command to write its output to a file called `output` (or any file name you choose).  Let's output to a file called `md5dict.txt`.  
+You can also append `> output` to the end of a command to write its output to a file called `output` (or any file name you choose).  Let's output to a file called `md5dict.txt`.  To append to an existing file, you can use `>> output` instead.
 
 To use the `cut` command, you can do the following:
 
