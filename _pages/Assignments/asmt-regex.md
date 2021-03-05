@@ -31,7 +31,7 @@ info:
   readings:
     - rtitle: "Regex Activity"
       rlink: "../Activities/Regex"  
-    - rtile: "Regex Reference"
+    - rtitle: "Regex Reference"
       rlink: "https://www.w3schools.com/python/python_regex.asp"
             
 tags:
