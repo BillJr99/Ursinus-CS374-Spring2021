@@ -10,7 +10,7 @@ info:
     - To relate a finite state machine to the grammar definition of a programming language
   models:
     - model: |
-        <code>(AB)*ABAB</code>
+        <code>(A+B)*ABAB</code>
       title: Finite Automata
       questions:
         - "Design a flow chart that reads one character at a time until the sequence <code>ABAB</code> is found."
