@@ -96,7 +96,7 @@ info:
         ]]></script> 
       title: "Functions and Evaluation Strategies"
       questions:
-        - "In C, what would happen if ptr is NULL?  Would this program fail?"
+        - "In C, what would happen if <code>ptr</code> is <code>NULL</code>?  Would this program fail?"
         - "From context, what do you think lazy evaluation means?"
         - "Would this outcome be different in an eager evaluation language?"
     - model: |
@@ -138,7 +138,7 @@ info:
       title: "Recursive Functions"
       questions:
         - "What do you think is meant by tail recursion?"
-        - "Define a recursive approach to find the last item in a list in Scheme.  Note that <code>(if (null? (cdr l))</code> asks if the <code>cdr</code> of list <code>l</code> is null."
+        - "Define a recursive approach to find the last item in a list in Scheme.  Note that <code>(if (null? (cdr l))</code> asks if the <code>cdr</code> of list <code>l</code> is <code>null</code>."
         - "Is each call to <code>factorial</code> distinct?  In other words, what is each value of <code>n</code> in each function call?  Based on this, what do you think is the difference between pass-by-reference and pass-by-value in a function call?"
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
