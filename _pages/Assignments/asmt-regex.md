@@ -55,7 +55,7 @@ offset = 0
 result = []
 
 # This will return a Match object for the first semicolon in the string
-match = re.search(";", data)
+match = re.search(r";", data)
 
 # This will print a list of the starting index (from 0) and the ending index (non-inclusive) of the match
 print(match.span())
@@ -87,6 +87,8 @@ def regexmatch(pattern, file):
     
     return result
 ```
+
+Don't forget to replace `r";"` with the variable parameter `pattern` when you merge into the function!
 
 ## Part 2: Regular Expressions
 
