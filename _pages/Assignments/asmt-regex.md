@@ -33,6 +33,8 @@ info:
       rlink: "../Activities/Regex"  
     - rtitle: "Regex Reference"
       rlink: "https://www.w3schools.com/python/python_regex.asp"
+    - rtitle: "Python Regular Expressions Interface"
+      rlink: "https://docs.python.org/3/library/re.html"
             
 tags:
   - regex
