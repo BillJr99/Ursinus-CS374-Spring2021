@@ -16,7 +16,7 @@ info:
         - "The first statement defines a parmeter called <code>x</code> and returns <code>x</code>. What does <code>(&lambda;x.x)y</code> do?"
     - model: |
         <code>true = &lambda;xy.x</code><br>
-        <code>true = &lambda;xy.y</code><br>
+        <code>false = &lambda;xy.y</code><br>
         Here, <code>x</code> and <code>y</code> are <strong>bound variables</strong>.  Variables that appear in the lambda expression that are not defined are referred to as <strong>free</strong> variables.
       title: Fundamental Constructs with the Lambda Calculus
       questions:
