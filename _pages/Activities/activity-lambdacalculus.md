@@ -43,9 +43,9 @@ info:
         Otherwise, <code>x</code> is <code>false</code>, and so the result is <code>true</code> if <code>y</code> is also <code>false</code>; in other words, the result is <code>not y</code>.<br>
         <code>equals(x, y) = &lambda;xy.xy not y</code><br>
         Which we can expand from our prior definition:
-        <code>equals(x, y) = &lambda;xy.xy x false true</code><br>
+        <code>equals(x, y) = &lambda;xy.xy y false true</code><br>
         Which we expand again to substitute our definitions for <code>true</code> and <code>false</code>:
-        <code>equals(x, y) = &lambda;xy.xy x &lambda;xy.y &lambda;xy.x</code><br>
+        <code>equals(x, y) = &lambda;xy.xy y &lambda;xy.y &lambda;xy.x</code><br>
         These substitutions are called <strong>beta-reductions</strong>.
         </div>
         <br>
