@@ -276,6 +276,8 @@ schedule:
   readings:
   - rtitle: "Bash Scripting Tutorial"
     rlink: "https://linuxconfig.org/bash-scripting-tutorial-for-beginners"  
+  - rtitle: "Bash Scripting Video"
+    rlink: "https://youtube.com/watch?v=e7BufAVwDiM"
 - week: "4"
   date: "1"
   title: "Scripting Languages" 
@@ -310,14 +312,18 @@ schedule:
   link: "./Activities/Regex"
   readings:
   - rtitle: "Compilers Ch. 3.3"
-    rlink: false    
+    rlink: false
+  - rtitle: "Regular Expressions Video"
+    rlink: "https://youtube.com/watch?v=528Jc3q86F8"  
 - week: "6"
   date: "0"
   title: "Finite Automata"  
   link: "./Activities/Automata"
   readings:
   - rtitle: "Compilers Ch. 3.4-3.6"
-    rlink: false      
+    rlink: false  
+  - rtitle: "Finite Automata Video"
+    rlink: "https://youtube.com/watch?v=vhiiia1_hC4"  
   deliverables:
   - dtitle: "Participation: First Self-Assessment Handed Out"
     dlink: "./Assignments/Participation/SelfAssessment"
@@ -390,7 +396,9 @@ schedule:
   link: "./Activities/LambdaCalculus"
   readings:
   - rtitle: "Introduction to the Lambda Calculus"
-    rlink: "https://plato.stanford.edu/entries/lambda-calculus/"  
+    rlink: "https://plato.stanford.edu/entries/lambda-calculus/" 
+  - rtitle: "Lambda Calculus Video"
+    rlink: "https://youtube.com/watch?v=3VQ382QG-y4"  
 - week: "9"
   date: "2"
   title: "The Compilation and Linking Process"  
@@ -398,6 +406,10 @@ schedule:
   readings:
   - rtitle: "Compilers Ch. 2"
     rlink: false 
+  - rtitle: "How the Linker Works Video"
+    rlink: "https://youtube.com/watch?v=oXk87NRTL1Y"
+  - rtitle: "Static and Dynamic Linking Video"
+    rlink: "https://youtube.com/watch?v=UdMRcJwvWIY"
 - week: "10"
   date: "0"
   title: "Libraries"     
