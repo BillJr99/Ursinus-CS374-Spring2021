@@ -402,7 +402,7 @@ schedule:
   date: "0"
   title: "Libraries"     
 - week: "10"
-  date: "1"
+  date: "2"
   title: "Bytecode"  
   readings:
   - rtitle: "Compilers Ch. 8"
