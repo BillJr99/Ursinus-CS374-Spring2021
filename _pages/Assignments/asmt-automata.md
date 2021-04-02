@@ -51,7 +51,7 @@ Write a program in a language of your choice that reads one character at a time 
 ## Part 3: Practice Constructing Finite State Machines
 Using the [FSM Simulator](http://ivanzuzak.info/noam/webapps/fsm_simulator/), construct some new finite state machines, which you can save and include with your submission.  For each finite state machine, assume a language L consisting of `String`s over `S*` given the alphabet `S = {0, 1}`.
 
-1. All strings in which the character 0 always appears in pairs.  For example: `1001110001` but not `1010010`.  The regular expression is: `(1*(00)*1*)*`.
+1. All strings in which the character 0 always appears in pairs.  For example: `100111001` but not `1010010`.  The regular expression is: `(1*(00)*1*)*`.
 2. All strings in which the count of the character 1 is a multiple of 3.  For example: `1001001` but not `100100`.  The regular expression is `(0*10*10*1)*`.
 
 ## Part 4: Limitations of Finite Automata
