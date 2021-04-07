@@ -86,7 +86,7 @@ info:
     - model: |
         <script type="syntaxhighlighter" class="brush: cpp"><![CDATA[
          selection-statement:
-            | IF ( expression ) statement
+              IF ( expression ) statement
             | IF ( expression ) statement ELSE statement
             
         open_statement: IF '(' expression ')' statement
