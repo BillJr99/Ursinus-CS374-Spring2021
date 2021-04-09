@@ -49,7 +49,7 @@ Create a function called `malloc` that accepts an `int size` and returns a `void
 #include <dlfcn.h>
 
 void* malloc(int size) {
-    void*(*mymalloc)(int) = (void (*)(int)) dlsym(RTLD_NEXT, "malloc");
+    void*(*mymalloc)(int) = (void* (*)(int)) dlsym(RTLD_NEXT, "malloc");
 }
 ```
 
