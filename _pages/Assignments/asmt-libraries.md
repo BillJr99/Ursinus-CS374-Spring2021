@@ -46,7 +46,11 @@ You may choose any library functionality you would like, and references are OK a
 Create a function called `malloc` that accepts an `int size` and returns a `void *`, just like `malloc` does.  In that function, create a pointer `static void*(*mymalloc)(int n)` that you will assign to a call to `dlsym(RTLD_NEXT, "malloc")`.  Call `mymalloc(size)` within this function, and store the result in a `void *` variable that your function will return.  Also increment a global variable that you'll store statically within your module.  This call will look like this:
 
 ```java
-void*(*mymalloc)(int) = (void (*)(int)) dlsym(RTLD_NEXT, "malloc");
+#include <dlfcn.h>
+
+void* malloc(int size) {
+    void*(*mymalloc)(int) = (void (*)(int)) dlsym(RTLD_NEXT, "malloc");
+}
 ```
 
 Next, do the same for `free`, which is a `void` function that accepts a `void *` parameter.  This time, decrement your counter, and print out that variable on each call to your custom `malloc` and `free`.  Test it out with a main() function that calls `malloc` and `free` a few times so you can verify the result.  You should have a count of 0 if you call `free` the same number of times as you call `malloc`!
