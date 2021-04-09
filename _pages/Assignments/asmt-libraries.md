@@ -57,11 +57,9 @@ Next, do the same for `free`, which is a `void` function that accepts a `void *`
 
 To compile your library, you can save your file as `mallocfree.c` and run:
 
-`gcc -ldl -o mallocfree.so -shared mallocfree.c`
+`gcc mallocfree.c -ldl`
 
-And, to call your test program `main.c`, you can compile it as usual and run:
-
-`LD_PRELOAD="/usr/lib/libdl.so" ./a.out`
+And, to test, you can write a `main()` function that calls `malloc` and `free`, and compile and run it as usual.
 
 ## References:
 
