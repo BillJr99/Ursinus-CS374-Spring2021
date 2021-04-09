@@ -52,8 +52,8 @@ info:
       mroom: "Regular Class Period"      
   finalexam: 
     - fdate: "2021/05/08"
-      fstarttime: "9 AM"
-      fendtime: "12 PM"
+      fstarttime: "9:00 AM"
+      fendtime: "12:00 PM"
       froom: "REMOTE"
   flexible_submission_policy: "In the absence of <a href=\"#accommodations\">accommodations</a> arranged in advance with the instructor or college, all assignments are due at 11:59PM Eastern Time on the date(s) stated on the schedule.  Assignments will be accepted without prior permission following this time with a points deduction of 3% per day if submitted before 11:59 PM Eastern Time on the day submitted.  Late work cannot be accepted after the final class meeting, nor during final exams week, nor after the exam." 
   late_penalty_per_period: 3
