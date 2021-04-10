@@ -47,19 +47,30 @@ Create a function called `malloc` that accepts an `int size` and returns a `void
 
 ```java
 #include <dlfcn.h>
+#include <stddef.h>
 
-void* malloc(int size) {
-    void*(*mymalloc)(int) = (void* (*)(int)) dlsym(RTLD_NEXT, "malloc");
+void* malloc(size_t size) {
+    void*(*mymalloc)(size_t) = (void* (*)(size_t)) dlsym(RTLD_NEXT, "malloc");
 }
 ```
 
-Next, do the same for `free`, which is a `void` function that accepts a `void *` parameter.  This time, decrement your counter, and print out that variable on each call to your custom `malloc` and `free`.  Test it out with a main() function that calls `malloc` and `free` a few times so you can verify the result.  You should have a count of 0 if you call `free` the same number of times as you call `malloc`!
+Next, do the same for `free`, which is a `void` function that accepts a `void *` parameter, as opposed to a function that accepts a `size_t` parameter and returns a `void *` like `malloc` did.  This time, decrement your counter, and print out that variable on each call to your custom `malloc` and `free`.  Test it out with a main() function that calls `malloc` and `free` a few times so you can verify the result.  You should have a count of 0 if you call `free` the same number of times as you call `malloc`!
 
 To compile your library, you can save your file as `mallocfree.c` and run:
 
 `gcc mallocfree.c -ldl`
 
-And, to test, you can write a `main()` function that calls `malloc` and `free`, and compile and run it as usual.
+And, to test, you can write a `main()` function that calls `malloc` and `free`, and compile and run it as usual.  Here is an example:
+
+```java
+int main(void) {
+    int* x = (int*) malloc(sizeof(int)); 
+    *x = 5;
+    printf("%d\n", *x);
+    free(x);
+    // print your counter value, which you can declare as a static int in this module, and increment/decrement in malloc/free
+}
+```
 
 ## References:
 
