@@ -466,14 +466,7 @@ schedule:
     points: 100     
 - week: "13"
   date: "0"
-  title: "Parsing and Interpreting"  
-  deliverables:
-  - dtitle: "Lab: Scanning Due"
-    dlink: "./Labs/Scanner"
-    points: 100   
-  - dtitle: "Lab: Parsing Handed Out"
-    dlink: "./Labs/Parser"
-    points: 100   
+  title: "Parsing and Interpreting"    
 - week: "13"
   date: "1"
   title: "Parsing and Interpreting"  
@@ -487,7 +480,14 @@ schedule:
   link: "./Activities/AST"      
   readings:
   - rtitle: "Compilers Ch. 6"
-    rlink: false    
+    rlink: false 
+  deliverables:
+  - dtitle: "Lab: Scanning Due"
+    dlink: "./Labs/Scanner"
+    points: 100   
+  - dtitle: "Lab: Parsing Handed Out"
+    dlink: "./Labs/Parser"
+    points: 100     
 - week: "14"
   date: "0"
   title: "Abstract Syntax Trees"  
