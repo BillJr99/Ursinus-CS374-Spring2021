@@ -190,7 +190,7 @@ int main(void) {
 }
 ```
 
-Notice the `term` and `factor` nonterminals require left factoring in order to properly implement repeating expressions.  Revise the grammar to factor these common productions, and include your revised grammar with your submission.  Then, modify the example recursive descent parser to call your new nonterminals.
+Notice the `term` and `expression` nonterminals require left factoring in order to properly implement repeating expressions.  Revise the grammar to factor these common productions, and include your revised grammar with your submission.  Then, modify the example recursive descent parser to call your new nonterminals.
 
 ## Part 2: A Calculator Parser with Variable Assignments
 
