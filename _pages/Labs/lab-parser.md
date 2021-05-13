@@ -348,6 +348,8 @@ struct symbol* getsymbol(char* name) {
             
             break;
         }
+        
+        p = p->next;
     }
     
     return result;
