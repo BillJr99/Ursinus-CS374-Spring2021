@@ -10,7 +10,7 @@ info:
   - section: "A"
   course_title: "Principles of Programming Languages"
   credit_hours: "4 Semester Hours"
-  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Fall2021/"
+  course_homepage: "https://www.billmongan.com/Ursinus-CS374-Spring2021/"
   teamshelproom: https://teams.microsoft.com/l/channel/19%3a6ddddb88493946fa956387e9543a3b06%40thread.tacv2/Mongan%2520Drop-In%2520Office%2520Hours?groupId=b16dcd6b-3522-4564-8306-9051a92c68ba&tenantId=921f1c03-8689-4e60-a722-f5ea581e00fe
   class_notebook: https://ursinuscollege365-my.sharepoint.com/personal/wmongan_ursinus_edu/Documents/Class%20Notebooks/CS374%20Spring%202021
   ical: files/CS374.ics
